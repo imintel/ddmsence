@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:temporalCoverage element, for unit testing -->
+<ddms:temporalCoverage xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/"><ddms:TimePeriod><ddms:name>My Time Period</ddms:name><ddms:start>1979-09-15</ddms:start><ddms:end>Not Applicable</ddms:end></ddms:TimePeriod></ddms:temporalCoverage> 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:extent element, for unit testing -->
+<ddms:extent
+	xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.1/"
+	ddms:qualifier="sizeBytes"
+	ddms:value="75000" />

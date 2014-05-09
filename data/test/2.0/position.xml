@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single gml:pos element, for unit testing -->
+<gml:pos xmlns:gml="http://www.opengis.net/gml"
+	srsName="http://metadata.dod.mil/mdr/ns/GSIP/crs/WGS84E_2D"
+	srsDimension="10" axisLabels="A B C" uomLabels="Meter Meter Meter"
+	>32.1 40.1</gml:pos>

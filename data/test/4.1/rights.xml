@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:rights element, for unit testing -->
+<ddms:rights
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	ddms:privacyAct="true" 
+	ddms:intellectualProperty="true" 
+	ddms:copyright="false"/>

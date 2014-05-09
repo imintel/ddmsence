@@ -1,0 +1,58 @@
+<project>
+	<!-- DDMSence is built with Apache Ant via the build.xml at the root of this project. 
+		This POM file is only used to sync the distributable JAR files to the Maven Central Repository.
+		For details, see: http://code.google.com/p/ddmsence/issues/detail?id=188 -->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.urizone</groupId>
+	<artifactId>ddmsence</artifactId>
+	<packaging>jar</packaging>
+	<name>DDMSence</name>
+	<version>2.1.0</version>	
+	<description>DDMSence (pronounced "dee-dee-em-Essence") is the only open-source Java library that fully supports the DoD Discovery Metadata Specification (DDMS).</description>
+	<url>http://ddmsence.urizone.net/</url>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License (LGPL)</name>
+			<url>http://ddmsence.urizone.net/license.jsp</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>http://ddmsence.googlecode.com/svn/trunk/</url>
+		<connection>http://ddmsence.googlecode.com/svn/trunk/</connection>
+	</scm>
+	<developers>
+		<developer>
+			<id>brian.uri</id>
+			<name>Brian Uri!</name>
+			<email>ddmsence@urizone.net</email>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+			<version>9.5.1-1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.2.5</version>
+			<!--  Actual Current Version as of v2.2.0: 1.2.10 -->
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+</project>

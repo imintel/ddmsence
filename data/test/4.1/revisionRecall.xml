@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:revisionRecall element, for unit testing -->
+<ddms:revisionRecall
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ddms:revisionID="1" ddms:revisionType="ADMINISTRATIVE RECALL"
+	network="NIPRNet" otherNetwork="PBS"
+	xlink:type="resource" xlink:role="tank" xlink:title="Tank Page" xlink:label="tank"
+	ism:classification="U" ism:ownerProducer="USA"><ddms:link xlink:type="locator" xlink:href="http://en.wikipedia.org/wiki/Tank" xlink:role="tank" xlink:title="Tank Page" xlink:label="tank" ism:classification="U" ism:ownerProducer="USA" /><ddms:details ism:classification="U" ism:ownerProducer="USA">Details</ddms:details></ddms:revisionRecall>

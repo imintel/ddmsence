@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- Notices - Distribution Notice: 
+           This document has been approved for Public Release and is available for use without restriction.
+       -->
+<cve:CVE xmlns:cve="urn:us:gov:ic:cve"
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns="urn:us:gov:ic:cve"
+	xmlns:ism="urn:us:gov:ic:ism"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:us:gov:ic:cve ../Schema/CVEXml.xsd"
+	ism:ownerProducer="USA"
+	ism:classification="U"
+	ism:DESVersion="9"
+	ism:resourceElement="true"
+	CVEVersion="2" ism:createDate="2011-06-24">
+	
+	<cve:IRM>
+		<ddms:identifier ddms:qualifier="name" ddms:value="urn:us:gov:ic:cvenum:ism:relto"/>
+		<ddms:title ism:ownerProducer="USA" ism:classification="U">CVEnumISMRelTo</ddms:title>
+		<ddms:description ism:ownerProducer="USA" ism:classification="U">USA followed by all currently valid ISO Trigraphs except USA in alphabetical order by Trigraph, 
+			followed by all currently valid CAPCO Coalition tetragraphs in alphabetical order by tetragraph.</ddms:description>
+		
+		<cve:Created>2011-11-17T08:45:00-04:00</cve:Created>
+		
+		<ddms:source ddms:value="CAPCO Register Appendix A"/>
+		<ddms:source ddms:value="ISO 3166 http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm"/>
+		<ddms:pointOfContact>
+			<ddms:organization>
+				<ddms:name>Office IC CIO</ddms:name>
+				<ddms:email>datastandardssupport@ugov.gov</ddms:email>
+			</ddms:organization>
+		</ddms:pointOfContact>
+	</cve:IRM>
+	
+	<cve:Enumeration multivalue="true" ism:ownerProducer="USA" ism:classification="U">
+		
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">USA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">United States</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ABW</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Aruba</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AFG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Afghanistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AGO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Angola</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AIA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Anguilla</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ALA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Åland Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ALB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Albania</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AND</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Andorra</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ARE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">United Arab Emirates</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ARG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Argentina</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ARM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Armenia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ASM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">American Samoa</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ATA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Antarctica</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ATF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">French Southern Territories</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ATG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Antigua and Barbuda</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AUS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Australia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AUT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Austria</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">AZE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Azerbaijan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BDI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Burundi</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BEL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Belgium</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BEN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Benin</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BES</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bonaire, Sint Eustatius and Saba</ddms:description>
+		</Term>	
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BFA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Burkina Faso</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BGD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bangladesh</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BGR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bulgaria</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BHR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bahrain</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BHS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bahamas</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BIH</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bosnia and Herzegovina</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BLM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Barthélemy</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BLR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Belarus</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BLZ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Belize</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BMU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bermuda</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BOL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bolivia, Plurinational State of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BRA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Brazil</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BRB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Barbados</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BRN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Brunei Darussalam</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BTN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bhutan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BVT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Bouvet Island</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BWA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Botswana</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CAF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Central African Republic</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CAN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Canada</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CCK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cocos (Keeling) Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CHE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Switzerland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CHL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Chile</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CHN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">China</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CIV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Côte d'Ivoire</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CMR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cameroon</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">COD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Congo, The Democratic Republic of the</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">COG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Congo</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">COK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cook Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">COL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Colombia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">COM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Comoros</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CPV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cape Verde</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CRI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Costa Rica</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CUB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cuba</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CUW</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Curaçao</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CXR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Christmas Island</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CYM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cayman Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CYP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cyprus</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CZE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Czech Republic</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DEU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Germany</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DJI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Djibouti</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DMA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Dominica</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DNK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Denmark</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DOM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Dominican Republic</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">DZA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Algeria</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ECU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Ecuador</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">EGY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Egypt</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ERI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Eritrea</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ESH</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Western Sahara</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ESP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Spain</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">EST</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Estonia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ETH</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Ethiopia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FIN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Finland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FJI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Fiji</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FLK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Falkland Islands (Malvinas)</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FRA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">France</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FRO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Faroe Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FSM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Micronesia, Federated States of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GAB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Gabon</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GBR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">United Kingdom</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GEO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Georgia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GGY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guernsey</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GHA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Ghana</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GIB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Gibraltar</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GIN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guinea</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GLP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guadeloupe</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GMB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Gambia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GNB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guinea-Bissau</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GNQ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Equatorial Guinea</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GRC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Greece</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GRD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Grenada</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GRL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Greenland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GTM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guatemala</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GUF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">French Guiana</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GUM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guam</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GUY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Guyana</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HKG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Hong Kong</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HMD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Heard Island and McDonald Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HND</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Honduras</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HRV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Croatia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HTI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Haiti</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">HUN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Hungary</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IDN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Indonesia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IMN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Isle of Man</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IND</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">India</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IOT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">British Indian Ocean Territory</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IRL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Ireland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IRN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Iran, Islamic Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IRQ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Iraq</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ISL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Iceland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ISR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Israel</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ITA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Italy</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">JAM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Jamaica</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">JEY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Jersey</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">JOR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Jordan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">JPN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Japan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KAZ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Kazakhstan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KEN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Kenya</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KGZ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Kyrgyzstan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KHM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cambodia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KIR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Kiribati</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KNA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Kitts and Nevis</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KOR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Korea, Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KWT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Kuwait</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LAO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Lao People's Democratic Republic</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LBN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Lebanon</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LBR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Liberia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LBY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Libya</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LCA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Lucia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LIE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Liechtenstein</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LKA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sri Lanka</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LSO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Lesotho</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LTU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Lithuania</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LUX</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Luxembourg</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">LVA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Latvia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MAC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Macao</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MAF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Martin (French part)</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MAR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Morocco</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MCO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Monaco</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MDA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Moldova, Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MDG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Madagascar</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MDV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Maldives</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MEX</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mexico</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MHL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Marshall Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MKD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Macedonia, The former Yugoslav Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MLI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mali</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MLT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Malta</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MMR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Myanmar</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MNE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Montenegro</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MNG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mongolia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MNP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Northern Mariana Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MOZ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mozambique</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MRT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mauritania</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MSR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Montserrat</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MTQ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Martinique</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MUS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mauritius</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MWI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Malawi</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MYS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Malaysia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MYT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Mayotte</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NAM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Namibia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NCL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">New Caledonia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NER</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Niger</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NFK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Norfolk Island</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NGA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Nigeria</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NIC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Nicaragua</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NIU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Niue</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NLD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Netherlands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NOR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Norway</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NPL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Nepal</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NRU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Nauru</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NZL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">New Zealand</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">OMN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Oman</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PAK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Pakistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PAN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Panama</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PCN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Pitcairn</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PER</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Peru</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PHL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Philippines</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PLW</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Palau</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PNG</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Papua New Guinea</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">POL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Poland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PRI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Puerto Rico</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PRK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Korea, Democratic People's Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PRT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Portugal</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PRY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Paraguay</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PSE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Palestinian Territory, Occupied</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">PYF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">French Polynesia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">QAT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Qatar</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">REU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Réunion</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ROU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Romania</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">RUS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Russian Federation</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">RWA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Rwanda</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SAU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saudi Arabia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SDN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sudan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SEN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Senegal</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SGP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Singapore</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SGS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">South Georgia and the South Sandwich Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SHN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Helena, Ascension and Tristan da Cunha</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SJM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Svalbard and Jan Mayen</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SLB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Solomon Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SLE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sierra Leone</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SLV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">El Salvador</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SMR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">San Marino</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SOM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Somalia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SPM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Pierre and Miquelon</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SRB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Serbia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SSD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">South Sudan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">STP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sao Tome and Principe</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SUR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Suriname</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SVK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Slovakia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SVN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Slovenia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SWE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sweden</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SWZ</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Swaziland</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SXM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Sint Maarten (Dutch part)</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SYC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Seychelles</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SYR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Syrian Arab Republic</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TCA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Turks and Caicos Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TCD</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Chad</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TGO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Togo</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">THA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Thailand</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TJK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tajikistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TKL</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tokelau</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TKM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Turkmenistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TLS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Timor-Leste</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TON</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tonga</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TTO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Trinidad and Tobago</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TUN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tunisia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TUR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Turkey</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TUV</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tuvalu</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TWN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Taiwan, Province of China</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TZA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Tanzania, United Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">UGA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Uganda</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">UKR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Ukraine</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">UMI</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">United States Minor Outlying Islands</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">URY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Uruguay</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">UZB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Uzbekistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VAT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Holy See (Vatican City State)</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VCT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Vincent and the Grenadines</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VEN</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Venezuela, Bolivarian Republic of</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VGB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Virgin Islands, British</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VIR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Virgin Islands, U.S.</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VNM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Viet Nam</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">VUT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Vanuatu</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">WLF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Wallis and Futuna</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">WSM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Samoa</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">YEM</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Yemen</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ZAF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">South Africa</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ZMB</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Zambia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ZWE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Zimbabwe</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ACGU</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">FOUR EYES</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">APFS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Suppressed</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">BWCS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Biological Weapons Convention States</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CFCK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">ROK/US Combined Forces Command, Korea</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CFUP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Coalition Forces Unified Protector</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CMFC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Combined Maritime Forces</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CMFP</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Cooperative Maritime Forces Pacific</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CPMT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Civilian Protection Monitoring Team for Sudan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">CWCS</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Chemical Weapons Convention States</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-06-15" >
+			<Value ism:classification="U" ism:ownerProducer="USA">EFOR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">European Union Stabilization Forces in Bosnia</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-05-25" >
+			<Value ism:classification="U" ism:ownerProducer="USA">EUDA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">European Union DARFUR</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">FVEY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">FIVE EYES</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GCTF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Global Counter-Terrorism Forces</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">GMIF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Global Maritime Interception Forces</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">IESC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">International Events Security Coalition</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">ISAF</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">International Security Assistance Force for Afghanistan</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">KFOR</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Stabilization Forces in Kosovo</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-05-18" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MIFH</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Multinational Interim Force Haiti</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">MLEC</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Multi-Lateral Enduring Contingency</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NACT</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">North African Counter-Terrorism Forces</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">NATO</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">North Atlantic Treaty Organization</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">OSTY</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Open Skies Treaty</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">SPAA</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">Suppressed</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">TEYE</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">THREE EYES</ddms:description>
+		</Term>
+		<Term ism:classification="U" ism:ownerProducer="USA" >
+			<Value ism:classification="U" ism:ownerProducer="USA">UNCK</Value>
+			<ddms:description ism:classification="U" ism:ownerProducer="USA">United Nations Command, Korea</ddms:description>
+		</Term>
+		
+	</cve:Enumeration>
+	
+</cve:CVE>

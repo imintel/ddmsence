@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--UNCLASSIFIED--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            ism:ownerProducer="USA"
+            ism:classification="U"
+            ism:DESVersion="5"
+            ism:resourceElement="true"
+            ism:createDate="2010-05-31">
+   <xsd:annotation>
+      <xsd:documentation>
+                    W3C XML Schema fragment encoding types for Controlled vocabulary encodings CVEnumISMClassificationAll. This file is generated so edits should be made to the CVEnumISMClassificationAll the CVE it is based on instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+<!--Generated TYPE DEFINITIONS ..................................-->
+<!--*************************************************************-->
+<xsd:simpleType name="CVEnumISMClassificationAll">
+      <xsd:annotation>
+         <xsd:documentation>(U) All currently valid classification marks
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumISMClassificationAll.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction base="xsd:token"><!--(U) The value "R" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="R">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) RESTRICTED</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "C" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="C">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) CONFIDENTIAL</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "S" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="S">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SECRET</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "TS" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="TS">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) TOP SECRET</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "U" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="U">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) UNCLASSIFIED</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:title element, for unit testing -->
+<ddms:title 
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA">DDMSence</ddms:title>

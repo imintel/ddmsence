@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:contributor element, for unit testing -->
+<ddms:contributor
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA"
+	ism:pocType="DoD-Dist-B">
+	<ddms:organization >
+		<ddms:name>DISA</ddms:name>
+	</ddms:organization>
+</ddms:contributor>

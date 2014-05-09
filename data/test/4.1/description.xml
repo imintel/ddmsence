@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:description element, for unit testing -->
+<ddms:description 
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA">A transformation service.</ddms:description>

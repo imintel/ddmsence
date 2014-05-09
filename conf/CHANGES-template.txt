@@ -1,0 +1,110 @@
+DDMSence (pronounced "dee-dee-em-Essence") is the only open-source Java library
+that fully supports the DoD Discovery Metadata Specification (DDMS).
+
+You can contact the author at ddmsence@urizone.net. The DDMSence
+home page is located at http://ddmsence.urizone.net/ .
+
+Copyright 2010 - 2013 by Brian Uri!
+===========================================================================
+Release History
+===========================================================================
+
+v 2.2.0 (12/15/2013):
+This stable release adds support for DDMS 5.0. API documentation has been updated,
+making it easier to track components across DDMS versions. 
+
+v 2.1.0 (01/19/2013):
+This stable release adds support for DDMS 4.1.
+
+v 2.0.0 (12/01/2011):
+This stable major release adds support for DDMS 4.0.1. Because upgrading to this
+version may require a non-trivial effort, an upgrade guide has been provided
+on the DDMSence Downloads page.
+
+v 1.11.0 (07/17/2011):
+This stable release adds support for XSLT2-based Schematron validation (Issue #79),
+performance improvements when using multiple Controlled Vocabularies (Issue #90),
+and a few minor bug fixes.
+
+v 1.10.0 (07/05/2011):
+This stable release adds support for DDMS 3.1 (Issue #82 through #85).
+
+v 1.9.1 (06/02/2011):
+This stable patch release corrects a few minor bugs in the Component Builder 
+framework (Issue #76 through #78).
+
+v 1.9.0 (05/24/2011):
+This stable release adds improvements to the Component Builder framework (Issue 
+#74 and #75).
+
+v 1.8.0 (05/13/2011):
+This stable release adds mutable Builders to all DDMS components (Issue #68).
+
+v 1.7.2 (03/10/2011):
+This stable patch release fixes errors in the sample Schematron files (Issue #67)
+and adds 3.0.1 as an alias for DDMS 3.0 (Issue #69).
+
+v 1.7.1 (11/16/2010):
+This stable patch release fixes an issue with validation of northbound latitude
+values (Issue #65).
+
+v 1.7.0 (09/18/2010):
+This stable release adds enhancements to the handling of Intelligence Community
+Controlled Vocabulary Enumerations (Issue #36 and Issue #59).
+
+v 1.6.0 (09/07/2010):
+This stable release updates bundled schemas and files for DDMS 3.0 (Issue #55). An
+online DDMS validator is also available on the DDMSence website.
+
+v 1.5.1 (07/07/2010):
+This stable patch release fixes a schema resolution issue when deploying
+in Glassfish (Issue #50).
+
+v 1.5.0 (07/05/2010):
+This stable release adds DDMSReader support for Strings, Readers, and 
+InputStreams, and also updates the bundled copy of XOM to 1.2.6.
+
+v 1.4.0 (06/08/2010):
+This stable release alters configurable properties to be code-driven, instead
+of using properties files (Issue #45, 47). It also adds API documentation to
+the bin-flavoured download, which should have been there from the beginning.
+
+v 1.3.2 (05/14/2010):
+This stable patch release fixes four minor bugs (Issue #40, 41, 42, 44).
+
+v 1.3.1 (05/09/2010):
+This stable patch release fixes bug related to namespace resolution when 
+working with more than one version of DDMS at a time (Issue #39).
+
+v 1.3.0 (05/07/2010):
+This stable release adds support for custom validation rules through ISO 
+Schematron.
+
+v 1.2.1 (04/24/2010):
+This stable patch release fixes a bug related to QName validation (Issue #37).
+
+v 1.2.0 (04/21/2010):
+This stable release improves unit tests and documentation, and adds support for 
+configurable properties.
+
+v 1.1.0 (04/08/2010):
+This stable release adds support for DDMS 2.0 and the Extensible Layer.
+ 
+v 1.0.0 (04/01/2010):
+First official stable release. JARs in "bin" release are compiled under Java 
+1.5.
+
+v 0.9.d (03/29/2010):
+Includes further improvements to the validation system, controlled vocabulary 
+validation for ICISM security attributes, and minor improvements to the 
+sample applications.
+ 
+v 0.9.c (03/25/2010):
+Adds support for validation warnings in addition to errors. This release
+removes the validate() method from the IDDMSComponent interface, because
+validating a valid component was overkill. In its place, 
+getValidationWarnings() has been added.
+
+v 0.9.b (03/24/2010):
+Initial beta release. Contains full support for DDMS 3.0 Pre-Release and
+the three sample applications.

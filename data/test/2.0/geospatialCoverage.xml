@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:geospatialCoverage element, for unit testing -->
+<ddms:geospatialCoverage xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+	<ddms:GeospatialExtent>
+		<ddms:geographicIdentifier>
+			<ddms:countryCode ddms:qualifier="urn:us:gov:ic:cvenum:irm:coverage:iso3166:trigraph:v1" ddms:value="LAO"/>
+		</ddms:geographicIdentifier>
+	</ddms:GeospatialExtent>
+</ddms:geospatialCoverage>	

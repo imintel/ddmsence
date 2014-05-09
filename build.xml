@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="DDMSence" default="compile" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+		
+	<!-- Release Process (need to automate parts of this)
+		1) Update version in build.xml.
+		2) Double-check @since tags on new classes.
+		3) Update index and web downloads page with latest release.
+		4) Update CHANGES-template.txt.
+		5) Run "dist" target and review archives.
+		6) Upload archives and deprecate last release.
+		7) Delete and reupload javadoc.
+		8) Upload web files.
+		9) Upload new DDMSence JAR to webserver and bounce.
+		10) Test Validator and Builder webapps.
+		11) Commit any remaining changes and tag as new release.
+		12) Manual sign-deploy steps for Maven Central Repository upload 
+		13) Announcements (Google Groups / freecode / LinkedIn)
+	-->
+
+	<property name="version" value="2.2.0" />
+	<property name="conf.dir" value="conf" />
+	<property name="data.dir" value="data" />
+	<property name="local.web.dir" value="/projects/urizone/output/tomcat/webapps/ddmsence" />
+	<property name="src.main.dir" value="src/main" />
+	<property name="src.samples.dir" value="src/samples" />
+	<property name="src.test.dir" value="src/test" />
+	<property name="output.dir" value="output" />
+	<property name="compile.main.dir" value="${output.dir}/classes/main/" />
+	<property name="compile.samples.dir" value="${output.dir}/classes/samples/" />
+	<property name="compile.test.dir" value="${output.dir}/classes/test/" />
+	<property name="docs.dir" value="${output.dir}/docs" />
+	<property name="jars.dir" value="${output.dir}/jars" />
+	<property name="dist.dir" value="${output.dir}/dist" />
+	<property name="dist.maven.dir" value="${dist.dir}/maven" />
+	<property name="reports.dir" value="${output.dir}/reports" />
+	
+	<path id="classpath.compile">
+		<fileset dir="lib/" includes="*.jar" />
+	</path>
+	<path id="classpath.samples">
+		<path refid="classpath.compile" />
+		<pathelement location="${compile.main.dir}" />
+	</path>
+	<path id="classpath.test">
+		<path refid="classpath.compile" />
+		<pathelement location="${compile.main.dir}" />
+		<pathelement location="${compile.test.dir}" />
+		<fileset dir="lib/test/" includes="*.jar" />
+		<!-- This is used to compile the DDMSVersionTaglet, which is used in generating docs -->
+		<fileset dir="${java.home}/../lib/" includes="tools.jar" />
+	</path>
+	
+	<fileset dir="${conf.dir}" id="files.properties">
+		<include name="*.properties" />
+	</fileset>				
+	<fileset dir="${data.dir}" id="files.requiredData">
+		<include name="schemas/**" />
+		<include name="schematron/**" />
+	</fileset>	
+	<fileset dir="${data.dir}" id="files.website">
+		<include name="web/**" />
+		<exclude name="web/images/**" />
+		<exclude name="web/favicon.ico" />
+	</fileset>
+	<fileset dir="${data.dir}" id="files.website.images">
+		<include name="web/images/**" />
+		<include name="web/favicon.ico" />
+	</fileset>
+		
+	<target name="clean" description="Removes the temporary build directories">
+		<delete quiet="true" dir="${output.dir}" />	
+	</target>
+	
+	<target name="compile" description="Compiles the Java classes and copies property files">
+		<mkdir dir="${compile.main.dir}" />
+		<mkdir dir="${compile.samples.dir}" />
+		<mkdir dir="${compile.test.dir}" />
+		<filter token="ddmsence.version" value="${version}"/>
+
+		<javac srcdir="${src.main.dir}" destdir="${compile.main.dir}" classpathref="classpath.compile" source="1.6" includeantruntime="false" />
+		<copy todir="${compile.main.dir}" filtering="true">
+			<fileset refid="files.properties" />
+			<fileset refid="files.requiredData" />
+		</copy>
+		<javac srcdir="${src.samples.dir}" destdir="${compile.samples.dir}" classpathref="classpath.samples" source="1.6" includeantruntime="false" />
+		<javac srcdir="${src.test.dir}" destdir="${compile.test.dir}" classpathref="classpath.test" source="1.6" includeantruntime="false" />
+		<copy todir="${compile.test.dir}" filtering="true">
+			<fileset refid="files.properties" />
+			<fileset refid="files.requiredData" />
+		</copy>
+				
+		<copy todir="${output.dir}" filtering="true">
+			<fileset refid="files.website" />
+		</copy>
+		<copy todir="${output.dir}">
+			<fileset refid="files.website.images" />
+		</copy>		
+	</target>	
+	
+	<target name="dist" depends="clean, compile, docs, tests" description="Performs a full build of the project and creates the bin/src downloads">
+		<mkdir dir="${jars.dir}" />
+		<mkdir dir="${dist.dir}/ddmsence-src-${version}" />
+		<mkdir dir="${dist.dir}/ddmsence-bin-${version}" />
+		<mkdir dir="${dist.maven.dir}" />
+
+		<!-- Build the src-flavored download archive -->
+		<copy todir="${dist.dir}/ddmsence-src-${version}" includeEmptyDirs="false">
+			<fileset dir=".">
+				<exclude name=".settings/**"/>
+				<exclude name="${output.dir}/**"/>				
+		    </fileset>
+		</copy>
+		<copy tofile="${dist.dir}/ddmsence-src-${version}/CHANGES.txt" file="${conf.dir}/CHANGES-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-src-${version}/LICENSE.txt" file="${conf.dir}/LICENSE-template.txt" />
+		<zip destfile="${dist.dir}/ddmsence-src-${version}.zip" basedir="${dist.dir}" includes="ddmsence-src-${version}/**" />
+		
+		<!-- Build the bin-flavored download archive -->
+		<jar destfile="${jars.dir}/ddmsence-${version}.jar" basedir="${compile.main.dir}">
+			<manifest>
+				<attribute name="Specification-Title" value="DDMSence"/>
+				<attribute name="Specification-Version" value="${version}"/>
+				<attribute name="Specification-Vendor" value="Brian Uri!"/>
+				<attribute name="Implementation-Title" value="DDMSence"/>
+				<attribute name="Implementation-Version" value="${version}"/>
+				<attribute name="Implementation-Vendor" value="Brian Uri!"/>				
+			</manifest>
+		</jar>
+		<jar destfile="${jars.dir}/ddmsence-samples-${version}.jar" basedir="${compile.samples.dir}">
+			<manifest>
+				<attribute name="Specification-Title" value="DDMSence"/>
+				<attribute name="Specification-Version" value="${version}"/>
+				<attribute name="Specification-Vendor" value="Brian Uri!"/>
+				<attribute name="Implementation-Title" value="DDMSence"/>
+				<attribute name="Implementation-Version" value="${version}"/>
+				<attribute name="Implementation-Vendor" value="Brian Uri!"/>				
+			</manifest>			
+		</jar>
+		<copy todir="${dist.dir}/ddmsence-bin-${version}" includeEmptyDirs="false">
+			<fileset dir=".">
+				<exclude name=".classpath"/>
+				<exclude name=".project"/>
+				<exclude name="build.xml"/>
+				<exclude name="pom.xml"/>
+				<exclude name=".settings/**"/>
+				<exclude name="${src.main.dir}/**"/>
+				<exclude name="${src.test.dir}/**"/>
+				<exclude name="${conf.dir}/**"/>
+				<exclude name="${output.dir}/**"/>
+				<exclude name="${data.dir}/schemas/**"/>
+				<exclude name="${data.dir}/schematron/**"/>
+				<exclude name="${data.dir}/test/**"/>
+				<exclude name="${data.dir}/web/**"/>	
+				<exclude name="lib/test/**"/>
+		    </fileset>
+			<fileset dir="${output.dir}">
+				<include name="docs/**" />
+			</fileset>
+		</copy>
+		<copy tofile="${dist.dir}/ddmsence-bin-${version}/CHANGES.txt" file="${conf.dir}/CHANGES-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-bin-${version}/LICENSE.txt" file="${conf.dir}/LICENSE-template.txt" />
+		<copy todir="${dist.dir}/ddmsence-bin-${version}/lib">
+			<fileset dir="${jars.dir}" />
+		</copy>
+		<zip destfile="${dist.dir}/ddmsence-bin-${version}.zip" basedir="${dist.dir}" includes="ddmsence-bin-${version}/**" />
+				
+		<!-- Build the Maven Central Repository archive -->
+		<copy todir="${dist.maven.dir}" file="${jars.dir}/ddmsence-${version}.jar" />
+		<jar jarfile="${dist.maven.dir}/ddmsence-${version}-javadoc.jar">
+			<fileset dir="${docs.dir}" />
+		</jar>
+		<jar jarfile="${dist.maven.dir}/ddmsence-${version}-sources.jar">
+			<fileset dir="${src.main.dir}" />
+		</jar>
+		<!-- Deploy manual commands:
+			mvn gpg:sign-and-deploy-file -DpomFile=pom.xml -Dfile=./output/dist/maven/ddmsence-2.1.0.jar -Durl=https://oss.sonatype.org/service/local/staging/deploy/maven2/ -DrepositoryId=sonatype-nexus-staging
+			mvn gpg:sign-and-deploy-file -DpomFile=pom.xml -Dfile=./output/dist/maven/ddmsence-2.1.0-sources.jar -Durl=https://oss.sonatype.org/service/local/staging/deploy/maven2/ -DrepositoryId=sonatype-nexus-staging -Dclassifier=sources
+			mvn gpg:sign-and-deploy-file -DpomFile=pom.xml -Dfile=./output/dist/maven/ddmsence-2.1.0-javadoc.jar -Durl=https://oss.sonatype.org/service/local/staging/deploy/maven2/ -DrepositoryId=sonatype-nexus-staging -Dclassifier=javadoc
+			
+			Then, Close and Release repository via Nexus UI.
+		-->
+			
+		<!-- Cleanup -->
+		<delete quiet="true" dir="${dist.dir}/ddmsence-src-${version}" />
+		<delete quiet="true" dir="${dist.dir}/ddmsence-bin-${version}" />
+	</target>
+	
+	<target name="docs" depends="compile" description="Generates API Documentation">
+		<tstamp>
+			<format property="javadoc.time" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+		<javadoc packagenames="buri.ddmsence.*" sourcepath="${src.main.dir}" destdir="${docs.dir}" classpathref="classpath.compile"
+			noqualifier="java.*"
+			overview="${conf.dir}/javadoc-overview.html"
+            use="true" splitindex="false"
+            windowtitle="DDMSence ${version} API"
+            docencoding="UTF-8" charset="UTF-8"
+            doctitle="DDMSence ${version}"		
+            bottom="Copyright 2010 - 2013 by Brian Uri!&lt;br /&gt;Generated on ${javadoc.time}&lt;br /&gt;&lt;a target='_top' href='http://ddmsence.urizone.net/'&gt;http://ddmsence.urizone.net/&lt;/a&gt;"
+			stylesheetfile="${conf.dir}/javadoc-stylesheet.css"
+		>
+			<taglet name="buri.ddmsence.util.taglet.DDMSChildInfoTaglet">
+				<path refid="classpath.test" />
+			</taglet>
+			<taglet name="buri.ddmsence.util.taglet.DDMSRuleTaglet">
+				<path refid="classpath.test" />
+			</taglet>
+			<taglet name="buri.ddmsence.util.taglet.DDMSVersionTaglet">
+				<path refid="classpath.test" />
+			</taglet>
+			<taglet name="buri.ddmsence.util.taglet.TableFooterTaglet">
+				<path refid="classpath.test" />
+			</taglet>
+			<taglet name="buri.ddmsence.util.taglet.TableHeaderTaglet">
+				<path refid="classpath.test" />
+			</taglet>
+		</javadoc>
+	</target>
+	
+	<target name="tests" description="Runs unit tests">
+		<delete quiet="true" dir="${reports.dir}" />
+		<mkdir dir="${reports.dir}" />
+		<junit printsummary="false" haltonfailure="true" fork="true" forkmode="perBatch">
+			<classpath refid="classpath.test" />
+	      	<formatter type="brief" usefile="false" />
+	      	<formatter type="xml" />
+	      	<batchtest todir="${reports.dir}">
+	        	<fileset dir="${compile.test.dir}" includes="**/*Test.class" />
+	      	</batchtest>
+	    </junit>
+	</target>	
+		
+	<target name="localWeb" depends="compile" description="Deploys the website pages locally for testing">
+		<mkdir dir="${local.web.dir}" />
+		<copy todir="${local.web.dir}" includeEmptyDirs="false">
+			<fileset dir="${output.dir}/web">
+				<include name="**/**" />
+		    </fileset>
+		</copy>
+	</target>
+	
+	<target name="localZip" description="Creates a ZIP of the entire project">
+		<tstamp>
+			<format property="backupStamp" pattern="yyMMdd-HHmm"/>
+		</tstamp>		
+		<zip destfile="../${backupStamp}-DDMSence-${version}.zip" basedir=".." includes="ddmsence/**" excludes="ddmsence/output/**" />
+	</target>	
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:verticalExtent element, for unit testing -->
+<ddms:verticalExtent xmlns:ddms="urn:us:mil:ces:metadata:ddms:4" ddms:unitOfMeasure="Meter" ddms:datum="AGL">
+	<ddms:minVerticalExtent>0.1</ddms:minVerticalExtent>
+	<ddms:maxVerticalExtent>100.1</ddms:maxVerticalExtent>
+</ddms:verticalExtent>

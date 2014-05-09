@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:creator element, for unit testing -->
+<ddms:creator
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA"
+	ism:pocType="DoD-Dist-B">
+	<ddms:person>
+		<ddms:name>Brian</ddms:name>
+		<ddms:surname>Uri</ddms:surname>
+	</ddms:person>
+</ddms:creator>	

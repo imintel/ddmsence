@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:organization element, for unit testing -->
+<ddms:organization xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" ddms:acronym="DISA">
+	<ddms:name>DISA</ddms:name>
+	<ddms:name>PEO-GES</ddms:name>
+	<ddms:phone>703-882-1000</ddms:phone>
+	<ddms:phone>703-885-1000</ddms:phone>
+	<ddms:email>ddms@fgm.com</ddms:email>
+	<ddms:subOrganization xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA">sub1</ddms:subOrganization>
+	<ddms:subOrganization xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA">sub2</ddms:subOrganization>
+</ddms:organization>	

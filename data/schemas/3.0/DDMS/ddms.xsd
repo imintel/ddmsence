@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+   xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/"
+   xmlns:ICISM="urn:us:gov:ic:ism"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns="http://metadata.dod.mil/mdr/ns/DDMS/3.0/"
+   targetNamespace="http://metadata.dod.mil/mdr/ns/DDMS/3.0/"
+   elementFormDefault="qualified" attributeFormDefault="qualified" version="3.0">
+
+   <xs:import namespace="urn:us:gov:ic:ism" schemaLocation="../ISM/IC-ISM.xsd" />
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml.xsd" />
+   <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd" />
+
+   <xs:element name="boundingBox" type="BoundingBoxType" />
+   <xs:element name="boundingGeometry" type="BoundingGeometryType" />
+   <xs:element name="category" type="CompoundCategoryIdentifierType" />
+   <xs:element name="contributor" type="contactInfoType" />
+   <xs:element name="countryCode" type="CompoundCountryCodeIdentifierType" />
+   <xs:element name="creator" type="contactInfoType" />
+   <xs:element name="dates" type="DatesType" />
+   <xs:element name="description" type="DescriptionType" />
+   <xs:element name="extent" type="QualifiedExtentValueType" />
+   <xs:element name="facilityIdentifier" type="FacilityIdentifierType" />
+   <xs:element name="format" type="FormatType" />
+   <xs:element name="geographicIdentifier">
+      <xs:complexType>
+         <xs:choice maxOccurs="unbounded">
+            <xs:element name="name" type="xs:string" minOccurs="0" />
+            <xs:element name="region" type="xs:string" minOccurs="0" />
+            <xs:element ref="ddms:countryCode" />
+            <xs:element ref="ddms:facilityIdentifier" />
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="geospatialCoverage" type="GeospatialCoverageType" />
+   <xs:element name="identifier" type="CompoundResourceIdentifierType" />
+   <xs:element name="keyword" type="CompoundKeywordIdentifierType" />
+   <xs:element name="language" type="CompoundLanguageIdentifierType" />
+   <xs:element name="medium" type="MediumType" />
+   <xs:element name="mimeType" type="MimeTypeType" />
+   <xs:element name="MaxVerticalExtent" type="VerticalDistanceType" />
+   <xs:element name="MinVerticalExtent" type="VerticalDistanceType" />
+   <xs:element name="Organization" type="OrganizationType" />
+   <xs:element name="Person" type="PersonType" />
+   <xs:element name="pointOfContact" type="contactInfoType" />
+   <xs:element name="postalAddress">
+      <xs:complexType>
+         <xs:group ref="PostalAddressGroup" />
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="publisher" type="contactInfoType" />
+   <xs:element name="relatedResources" type="RelatedResourcesType" />
+   <xs:element name="Resource" type="ResourceType" />
+   <xs:element name="rights" type="RightsType" />
+   <xs:element name="security">
+      <xs:complexType>
+         <xs:attribute ref="ICISM:excludeFromRollup" use="required" fixed="true" />
+         <xs:attributeGroup ref="ICISM:SecurityAttributesGroup" />
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="Service" type="ServiceType" />
+   <xs:element name="source" type="CompoundSourceIdentifierType" />
+   <xs:element name="Subject" type="SubjectType" />
+   <xs:element name="subjectCoverage" type="SubjectCoverageType" />
+   <xs:element name="subtitle" type="SubtitleType" />
+   <xs:element name="temporalCoverage" type="TemporalCoverageType" />
+   <xs:element name="title" type="TitleType" />
+   <xs:element name="type" type="CompoundTypeIdentifierType" />
+   <xs:element name="Unknown" type="UnknownType" />
+   <xs:element name="verticalExtent" type="VerticalExtentType" />
+   <xs:element name="virtualCoverage" type="VirtualCoverageType" />
+
+   <xs:group name="PostalAddressGroup">
+      <xs:sequence>
+         <xs:element name="street" type="xs:string" minOccurs="0" maxOccurs="6" />
+         <xs:element name="city" type="xs:string" minOccurs="0" />
+         <xs:choice minOccurs="0">
+            <xs:element name="state" type="xs:string" />
+            <xs:element name="province" type="xs:string" />
+         </xs:choice>
+         <xs:element name="postalCode" type="xs:string" minOccurs="0" />
+         <xs:element ref="ddms:countryCode" minOccurs="0" />
+      </xs:sequence>
+   </xs:group>
+
+   <xs:simpleType name="CombinedDateType">
+      <xs:union memberTypes="xs:dateTime xs:date xs:gYearMonth xs:gYear" />
+   </xs:simpleType>
+   <xs:simpleType name="DateValueExtensionType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Not Applicable" />
+         <xs:enumeration value="Unknown" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ExtendedCombinedDateType">
+      <xs:union memberTypes="CombinedDateType DateValueExtensionType" />
+   </xs:simpleType>
+   <xs:simpleType name="LengthMeasureType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Meter" />
+         <xs:enumeration value="Kilometer" />
+         <xs:enumeration value="Foot" />
+         <xs:enumeration value="StatuteMile" />
+         <xs:enumeration value="NauticalMile" />
+         <xs:enumeration value="Fathom" />
+         <xs:enumeration value="Inch" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="MediumType">
+      <xs:restriction base="xs:string" />
+   </xs:simpleType>
+   <xs:simpleType name="MimeTypeType">
+      <xs:restriction base="xs:string" />
+   </xs:simpleType>
+   <xs:simpleType name="VerticalDatumType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="MSL" />
+         <xs:enumeration value="AGL" />
+         <xs:enumeration value="HAE" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="BoundingBoxType">
+      <xs:sequence>
+         <xs:element name="WestBL" type="xs:double" />
+         <xs:element name="EastBL" type="xs:double" />
+         <xs:element name="SouthBL" type="xs:double" />
+         <xs:element name="NorthBL" type="xs:double" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BoundingGeometryType">
+      <xs:choice maxOccurs="unbounded">
+         <xs:element ref="gml:Polygon" />
+         <xs:element ref="gml:Point" />
+      </xs:choice>
+   </xs:complexType>
+   <xs:complexType name="CompoundCategoryIdentifierType">
+      <xs:attribute name="qualifier" type="xs:anyURI" use="optional" />
+      <xs:attribute name="code" type="xs:string" use="optional" />
+      <xs:attribute name="label" type="xs:string" use="required" />
+      <xs:anyAttribute namespace="##other" processContents="lax" />
+   </xs:complexType>
+   <xs:complexType name="CompoundCountryCodeIdentifierType">
+      <xs:attribute name="qualifier" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+   </xs:complexType>
+   <xs:complexType name="CompoundKeywordIdentifierType">
+      <xs:attribute name="value" type="xs:string" use="required" />
+      <xs:anyAttribute namespace="##other" processContents="lax" />
+   </xs:complexType>
+   <xs:complexType name="CompoundLanguageIdentifierType">
+      <xs:attribute name="qualifier" type="xs:string" />
+      <xs:attribute name="value" type="xs:string" />
+   </xs:complexType>
+   <xs:complexType name="CompoundResourceIdentifierType">
+      <xs:attribute name="qualifier" type="xs:anyURI" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+   </xs:complexType>
+   <xs:complexType name="CompoundSourceIdentifierType">
+      <xs:attribute name="qualifier" type="xs:string" use="optional" />
+      <xs:attribute name="value" type="xs:string" use="optional" />
+      <xs:attribute name="schemaQualifier" type="xs:string" use="optional" />
+      <xs:attribute name="schemaHref" type="xs:anyURI" use="optional" />
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="CompoundTypeIdentifierType">
+      <xs:attribute name="qualifier" type="xs:string" />
+      <xs:attribute name="value" type="xs:string" />
+   </xs:complexType>
+   <xs:complexType name="contactInfoType">
+      <xs:choice>
+         <xs:element ref="Organization" />
+         <xs:element ref="Person" />
+         <xs:element ref="Service" />
+         <xs:element ref="Unknown" />
+      </xs:choice>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="DatesType">
+      <xs:attribute name="created" type="CombinedDateType" use="optional" />
+      <xs:attribute name="posted" type="CombinedDateType" use="optional" />
+      <xs:attribute name="validTil" type="CombinedDateType" use="optional" />
+      <xs:attribute name="infoCutOff" type="CombinedDateType" use="optional" />
+   </xs:complexType>
+   <xs:complexType name="DescriptionType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attributeGroup ref="ICISM:SecurityAttributesGroup" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="FacilityIdentifierType">
+      <xs:attribute name="beNumber" type="xs:string" use="required" />
+      <xs:attribute name="osuffix" type="xs:string" use="optional" />
+   </xs:complexType>
+   <xs:complexType name="FormatType">
+      <xs:sequence>
+         <xs:element name="Media" type="MediaType" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GeospatialCoverageType">
+      <xs:sequence>
+         <xs:element name="GeospatialExtent" type="PlaceType" />
+      </xs:sequence>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="MediaType">
+      <xs:sequence>
+         <xs:element ref="mimeType" />
+         <xs:element ref="extent" minOccurs="0" />
+         <xs:element ref="medium" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="OrganizationType">
+      <xs:complexContent>
+         <xs:extension base="ProducerType">
+            <xs:sequence>
+               <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+               <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="PersonType">
+      <xs:complexContent>
+         <xs:extension base="ProducerType">
+            <xs:sequence>
+               <xs:element name="surname" type="xs:string" />
+               <xs:element name="userID" type="xs:string" minOccurs="0" />
+               <xs:element name="affiliation" type="xs:string" minOccurs="0" />
+               <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+               <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="PlaceType">
+      <xs:choice maxOccurs="unbounded">
+         <xs:element ref="geographicIdentifier" />
+         <xs:element ref="boundingBox" />
+         <xs:element ref="boundingGeometry" />
+         <xs:element ref="postalAddress" />
+         <xs:element ref="verticalExtent" />
+      </xs:choice>
+   </xs:complexType>
+   <xs:complexType name="ProducerBaseType">
+      <xs:anyAttribute namespace="##other" />
+   </xs:complexType>
+   <xs:complexType name="ProducerType">
+      <xs:complexContent>
+         <xs:extension base="ProducerBaseType">
+            <xs:sequence>
+               <xs:element name="name" type="xs:string" maxOccurs="unbounded" />
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="QualifiedExtentValueType">
+      <xs:attribute name="qualifier" type="xs:anyURI" />
+      <xs:attribute name="value" type="xs:string" />
+   </xs:complexType>
+   <xs:complexType name="RelatedResourcesType">
+      <xs:sequence>
+         <xs:element name="RelatedResource" maxOccurs="unbounded">
+            <xs:complexType>
+               <xs:complexContent>
+                  <xs:extension base="CompoundResourceIdentifierType">
+                     <xs:sequence>
+                        <xs:element name="link" maxOccurs="unbounded">
+                           <xs:complexType>
+                              <xs:attributeGroup ref="xlink:locatorLink" />
+                           </xs:complexType>
+                        </xs:element>
+                     </xs:sequence>
+                  </xs:extension>
+               </xs:complexContent>
+            </xs:complexType>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="relationship" type="xs:anyURI" use="required" />
+      <xs:attribute name="direction" use="optional" default="outbound">
+         <xs:simpleType>
+            <xs:restriction base="xs:string">
+               <xs:enumeration value="inbound" />
+               <xs:enumeration value="outbound" />
+               <xs:enumeration value="bidirectional" />
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="ResourceType">
+      <xs:sequence>
+         <xs:element ref="identifier" maxOccurs="unbounded" />
+         <xs:element ref="title" maxOccurs="unbounded" />
+         <xs:element ref="subtitle" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="description" minOccurs="0" />
+         <xs:element ref="language" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="dates" minOccurs="0" />
+         <xs:element ref="rights" minOccurs="0" />
+         <xs:element ref="source" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="type" minOccurs="0" maxOccurs="unbounded" />
+         <xs:choice maxOccurs="unbounded">
+            <xs:element ref="creator" maxOccurs="unbounded" />
+            <xs:element ref="publisher" maxOccurs="unbounded" />
+            <xs:element ref="contributor" maxOccurs="unbounded" />
+            <xs:element ref="pointOfContact" maxOccurs="unbounded" />
+         </xs:choice>
+         <xs:element ref="format" minOccurs="0" />
+         <xs:element ref="subjectCoverage" />
+         <xs:element ref="virtualCoverage" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="temporalCoverage" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="geospatialCoverage" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="relatedResources" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element ref="security" />
+         <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesGroup" />
+      <xs:attributeGroup ref="ICISM:ResourceNodeAttributeGroup" />
+      <xs:attributeGroup ref="ICISM:ISMRootNodeAttributeGroup" />
+      <xs:anyAttribute namespace="##other" processContents="lax" />
+   </xs:complexType>
+   <xs:complexType name="RightsType">
+      <xs:attribute name="privacyAct" type="xs:boolean" default="false" />
+      <xs:attribute name="intellectualProperty" type="xs:boolean" default="false" />
+      <xs:attribute name="copyright" type="xs:boolean" default="false" />
+   </xs:complexType>
+   <xs:complexType name="ServiceType">
+      <xs:complexContent>
+         <xs:extension base="ProducerType">
+            <xs:sequence>
+               <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+               <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SubjectCoverageType">
+      <xs:sequence>
+         <xs:element ref="Subject" />
+      </xs:sequence>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="SubjectType">
+      <xs:choice maxOccurs="unbounded">
+         <xs:element ref="category" />
+         <xs:element ref="keyword" />
+      </xs:choice>
+   </xs:complexType>
+   <xs:complexType name="SubtitleType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attributeGroup ref="ICISM:SecurityAttributesGroup" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="TemporalCoverageType">
+      <xs:sequence>
+         <xs:element name="TimePeriod" type="TimePeriodType" />
+      </xs:sequence>
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+   <xs:complexType name="TimePeriodType">
+      <xs:sequence>
+         <xs:element name="name" type="xs:string" default="Unknown" minOccurs="0" />
+         <xs:element name="start" type="ExtendedCombinedDateType" default="Unknown" />
+         <xs:element name="end" type="ExtendedCombinedDateType" default="Unknown" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="TitleType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attributeGroup ref="ICISM:SecurityAttributesGroup" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="UnknownType">
+      <xs:complexContent>
+         <xs:extension base="ProducerType">
+            <xs:sequence>
+               <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+               <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="VerticalDistanceType">
+      <xs:simpleContent>
+         <xs:extension base="xs:double">
+            <xs:attribute name="unitOfMeasure" type="LengthMeasureType" use="optional" />
+            <xs:attribute name="datum" type="VerticalDatumType" use="optional" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="VerticalExtentType">
+      <xs:sequence>
+         <xs:element ref="MinVerticalExtent" />
+         <xs:element ref="MaxVerticalExtent" />
+      </xs:sequence>
+      <xs:attribute name="unitOfMeasure" type="LengthMeasureType" use="required" />
+      <xs:attribute name="datum" type="VerticalDatumType" use="required" />
+   </xs:complexType>
+   <xs:complexType name="VirtualCoverageType">
+      <xs:attribute name="protocol" type="xs:string" use="optional" />
+      <xs:attribute name="address" type="xs:string" use="optional" />
+      <xs:attributeGroup ref="ICISM:SecurityAttributesOptionGroup" />
+   </xs:complexType>
+
+</xs:schema>

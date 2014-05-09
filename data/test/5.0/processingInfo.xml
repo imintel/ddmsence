@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:processingInfo element, for unit testing -->
+<ddms:processingInfo xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U" ism:ownerProducer="USA" ddms:dateProcessed="2011-08-19">XSLT Transformation to convert DDMS 2.0 to DDMS 3.1.</ddms:processingInfo>

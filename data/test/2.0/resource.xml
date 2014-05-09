@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:Resource xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:ism="urn:us:gov:ic:ism:v2" ism:DESVersion="2">
+	<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence:testIdentifier" />
+	<ddms:title ism:classification="U" ism:ownerProducer="USA">DDMSence</ddms:title>
+	<ddms:subtitle ism:classification="U" ism:ownerProducer="USA">Version 0.1</ddms:subtitle>
+	<ddms:description ism:classification="U" ism:ownerProducer="USA">A transformation service.</ddms:description>
+	<ddms:language ddms:qualifier="http://purl.org/dc/elements/1.1/language" ddms:value="en" />
+	<ddms:dates ddms:created="2003" />
+	<ddms:rights ddms:privacyAct="true" ddms:intellectualProperty="true" ddms:copyright="true"/>
+	<ddms:source ddms:value="http://www.xmethods.com" />
+	<ddms:type ddms:qualifier="DCMITYPE" ddms:value="http://purl.org/dc/dcmitype/Text"/>
+	<ddms:creator>
+		<ddms:Organization>
+			<ddms:name>DISA</ddms:name>
+		</ddms:Organization>	
+	</ddms:creator>
+	<ddms:publisher>
+		<ddms:Person>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+		</ddms:Person>	
+	</ddms:publisher>
+	<ddms:contributor>
+		<ddms:Service>
+			<ddms:name>https://metadata.dod.mil/ebxmlquery/soap</ddms:name>
+		</ddms:Service>	
+	</ddms:contributor>
+	<ddms:pointOfContact>
+		<ddms:Person>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+		</ddms:Person>
+	</ddms:pointOfContact>
+	<ddms:format>
+		<ddms:Media>
+			<ddms:mimeType>text/xml</ddms:mimeType>
+		</ddms:Media>
+	</ddms:format>
+	<ddms:subjectCoverage>
+		<ddms:Subject>
+			<ddms:keyword ddms:value="DDMSence"/>
+		</ddms:Subject>
+	</ddms:subjectCoverage>
+	<ddms:virtualCoverage ddms:address="123.456.789.0" ddms:protocol="IP" />
+	<ddms:temporalCoverage>
+		<ddms:TimePeriod>
+			<ddms:start>1979-09-15</ddms:start>
+			<ddms:end>Not Applicable</ddms:end>
+		</ddms:TimePeriod>
+	</ddms:temporalCoverage>
+	<ddms:geospatialCoverage>
+		<ddms:GeospatialExtent>
+			<ddms:boundingGeometry>
+				<gml:Point xmlns:gml="http://www.opengis.net/gml" gml:id="IDValue" srsName="http://metadata.dod.mil/mdr/ns/GSIP/crs/WGS84E_2D" srsDimension="10" axisLabels="A B C" uomLabels="Meter Meter Meter">
+					<gml:pos>32.1 40.1</gml:pos>
+				</gml:Point>
+			</ddms:boundingGeometry>
+		</ddms:GeospatialExtent>
+	</ddms:geospatialCoverage>
+	<ddms:relatedResources ddms:relationship="http://purl.org/dc/terms/references" ddms:direction="outbound">
+		<ddms:RelatedResource ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://en.wikipedia.org/wiki/Tank">
+			<ddms:link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="locator" xlink:href="http://en.wikipedia.org/wiki/Tank" xlink:role="role"/>
+		</ddms:RelatedResource>
+	</ddms:relatedResources>
+	<ddms:security ism:classification="U" ism:ownerProducer="USA" />
+</ddms:Resource>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:Resource xsi:schemaLocation="http://metadata.dod.mil/mdr/ns/DDMS/3.0/ ../schemas/3.0/DDMS/ddms.xsd" xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ICISM="urn:us:gov:ic:ism" ICISM:resourceElement="true" ICISM:DESVersion="2" ICISM:createDate="2010-01-21" ICISM:classification="U" ICISM:ownerProducer="USA"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddmsence="http://ddmsence.urizone.net/"
+	ddmsence:exampleFile="true">
+	<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence"/>
+	<ddms:title ICISM:ownerProducer="USA" ICISM:classification="U">Extensible Layer Example</ddms:title>
+	<ddms:description ICISM:ownerProducer="USA" ICISM:classification="U">This resource file shows examples of using extensible attributes and elements in a DDMS Resource.</ddms:description>
+	<ddms:dates ddms:created="2010-04-07" />
+	<ddms:rights ddms:copyright="true" ddms:privacyAct="false" ddms:intellectualProperty="true"/>
+	<ddms:creator ICISM:ownerProducer="USA" ICISM:classification="U">
+		<ddms:Person xlink:title="This is somewhat nonsensical, but extensible attributes on producers are set to STRICT validation, so I had to use one of the existing DDMS tags.">
+			<ddms:name>Brian Uri</ddms:name>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+			<ddms:email>ddmsence@urizone.net</ddms:email>
+		</ddms:Person>
+	</ddms:creator>
+	<ddms:subjectCoverage>
+		<ddms:Subject>
+			<ddms:keyword ddms:value="Extensible Layer" ddmsence:relevance="99" />
+			<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Asset" ddms:code="Asset" ddms:label="Asset" ddmsence:relevance="85" />
+		</ddms:Subject>
+	</ddms:subjectCoverage>
+	<ddms:security ICISM:ownerProducer="USA" ICISM:classification="U" ICISM:excludeFromRollup="true"/>
+	<ddmsence:extension>This is an extensible element.</ddmsence:extension>
+</ddms:Resource>

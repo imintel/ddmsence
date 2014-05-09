@@ -1,0 +1,11 @@
+		</div>
+	</div>
+	<div id="footer">DDMSence is an independent project, and is not endorsed or supported by the 
+		Department of Defense (DoD), Defense Information Systems Agency (DISA), or Novetta Solutions.
+		<br />The DDMSence website is &copy; 2010 - 2013 by 
+		<script type="text/javascript">
+			document.write("<a href=\"mailto:" + eMail + "\">Brian Uri!</a>.");
+		</script>
+	<br /><div class="counter"><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> visitors since March 2010</div>
+	</div>
+</div>

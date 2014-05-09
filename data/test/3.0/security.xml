@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:security element, for unit testing -->
+<ddms:security xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/" xmlns:ism="urn:us:gov:ic:ism" ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA"/>

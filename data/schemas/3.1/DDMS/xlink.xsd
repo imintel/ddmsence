@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.w3.org/1999/xlink"
+   elementFormDefault="qualified">
+   
+   <attribute name="href" type="anyURI" />
+   <attribute name="label" type="string" />
+   <attribute name="role" type="string" />
+   <attribute name="title" type="string" />
+   
+   <attributeGroup name="locatorLink">
+      <attribute name="type" type="string" fixed="locator" form="qualified" />
+      <attribute ref="xlink:href" use="required" />
+      <attribute ref="xlink:role" use="optional" />
+      <attribute ref="xlink:title" use="optional" />
+      <attribute ref="xlink:label" use="optional" />
+   </attributeGroup>
+</schema>

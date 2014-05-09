@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:security element, for unit testing -->
+<ddms:security xmlns:ddms="urn:us:mil:ces:metadata:ddms:4" xmlns:ism="urn:us:gov:ic:ism" ism:excludeFromRollup="true" ism:classification="U" ism:ownerProducer="USA">
+	<ddms:noticeList ism:classification="U" ism:ownerProducer="USA">
+		<ism:Notice ism:noticeType="DoD-Dist-B" ism:noticeReason="noticeReason" ism:noticeDate="2011-09-15" ism:unregisteredNoticeType="unregisteredNoticeType" ism:externalNotice="false" ism:classification="U" ism:ownerProducer="USA">
+			<ism:NoticeText ism:classification="U" ism:ownerProducer="USA" ism:pocType="DoD-Dist-B">noticeText</ism:NoticeText>
+		</ism:Notice>
+	</ddms:noticeList>
+	<ntk:Access xmlns:ntk="urn:us:gov:ic:ntk" ism:classification="U" ism:ownerProducer="USA">
+		<ntk:AccessIndividualList>
+			<ntk:AccessIndividual ism:classification="U" ism:ownerProducer="USA">
+				<ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName>
+				<ntk:AccessIndividualValue ism:classification="U" ism:ownerProducer="USA">user_2321889:Doe_John_H</ntk:AccessIndividualValue>
+			</ntk:AccessIndividual>
+		</ntk:AccessIndividualList>
+	</ntk:Access>
+</ddms:security>

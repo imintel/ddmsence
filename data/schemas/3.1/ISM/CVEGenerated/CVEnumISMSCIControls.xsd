@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--UNCLASSIFIED--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            ism:ownerProducer="USA"
+            ism:classification="U"
+            ism:DESVersion="5"
+            ism:resourceElement="true"
+            ism:createDate="2010-03-12">
+   <xsd:annotation>
+      <xsd:documentation>
+                    W3C XML Schema fragment encoding types for Controlled vocabulary encodings CVEnumISMSCIControls. This file is generated so edits should be made to the CVEnumISMSCIControls the CVE it is based on instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+<!--Generated TYPE DEFINITIONS ..................................-->
+<!--*************************************************************-->
+<xsd:simpleType name="CVEnumISMSCIControlsValues">
+      <xsd:annotation>
+         <xsd:documentation>(U) All currently valid SCI controls from the published register
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumISMSCIControls.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:union>
+         <xsd:simpleType>
+            <xsd:restriction base="xsd:token"><!--(U) The pattern "SI-G-[A-Z][A-Z][A-Z][A-Z]" is classified (U) --><xsd:pattern ism:classification="U" ism:ownerProducer="USA"
+                            value="SI-G-[A-Z][A-Z][A-Z][A-Z]">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) G-AAAA, AAAA represents 4 alpha characters to indicate sub Gamma compartments</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:pattern>
+               <!--(U) The pattern "SI-ECI-[A-Z][A-Z][A-Z]" is classified (U) --><xsd:pattern ism:classification="U" ism:ownerProducer="USA" value="SI-ECI-[A-Z][A-Z][A-Z]">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) ECI-AAA, AAA represents 3 alpha characters to indicate ECI compartments</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:pattern>
+            </xsd:restriction>
+         </xsd:simpleType>
+         <xsd:simpleType>
+            <xsd:restriction base="xsd:token"><!--(U) The value "HCS" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="HCS">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) HCS</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:enumeration>
+               <!--(U) The value "KDK" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="KDK">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) KLONDIKE</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:enumeration>
+               <!--(U) The value "SI" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SI">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) COMINT</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:enumeration>
+               <!--(U) The value "SI-G" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SI-G">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SI-GAMMA</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:enumeration>
+               <!--(U) The value "TK" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="TK">
+                  <xsd:annotation>
+                     <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) TALENT KEYHOLE</xsd:documentation>
+                  </xsd:annotation>
+               </xsd:enumeration>
+            </xsd:restriction>
+         </xsd:simpleType>
+      </xsd:union>
+   </xsd:simpleType>
+   <xsd:simpleType name="CVEnumISMSCIControls">
+      <xsd:restriction>
+         <xsd:simpleType>
+            <xsd:list itemType="CVEnumISMSCIControlsValues"/>
+         </xsd:simpleType>
+         <xsd:maxLength value="1000"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

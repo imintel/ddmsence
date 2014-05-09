@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- 
+		DDMSence Controls: 
+			This code is not checked into the DDMSence project, because
+			it has dependencies on Spring and other libraries which are ancillary
+			to the main purpose of the library. I did not want to bloat up the main
+			distribution with these files, but you can find the source code on the website
+			by visiting the two example web applications at:
+			
+			http://ddmsence.urizone.net/validator.uri
+			http://ddmsence.urizone.net/builder.uri
+
+			The DDMSence web application is deployed in an environment which already has
+			Spring JARs deployed.
+	-->
+	<context:component-scan base-package="buri.web.ddmsence" />	
+	<mvc:annotation-driven/>
+	
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+    </bean>
+        
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="25000" />
+	</bean>
+</beans>

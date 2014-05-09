@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:geospatialCoverage element, for unit testing -->
+<ddms:geospatialCoverage xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA" ddms:precedence="Primary" ddms:order="1">
+	<ddms:geographicIdentifier>
+		<ddms:countryCode ddms:codespace="urn:us:gov:dod:nga:def:geo-political:GENC:3:ed1" ddms:code="USA"/>
+	</ddms:geographicIdentifier>
+</ddms:geospatialCoverage>	

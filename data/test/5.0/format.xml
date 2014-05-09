@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:format element, for unit testing -->
+<ddms:format xmlns:ddms="urn:us:mil:ces:metadata:ddms:5">
+	<ddms:mimeType>text/xml</ddms:mimeType>
+	<ddms:extent ddms:qualifier="sizeBytes" ddms:value="75000"/>
+	<ddms:medium>digital</ddms:medium>
+</ddms:format>
+	

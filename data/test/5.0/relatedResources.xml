@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:relatedResource element, for unit testing -->
+<ddms:relatedResource xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ism="urn:us:gov:ic:ism" ddms:relationship="http://purl.org/dc/terms/references" ddms:direction="outbound" ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://en.wikipedia.org/wiki/Tank" ism:classification="U" ism:ownerProducer="USA"><ddms:link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="locator" xlink:href="http://en.wikipedia.org/wiki/Tank" xlink:role="tank" xlink:title="Tank Page" xlink:label="tank"/></ddms:relatedResource>
+						

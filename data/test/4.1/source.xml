@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:source element, for unit testing -->
+<ddms:source 
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA"
+	ddms:qualifier="URL"
+	ddms:value="http://www.xmethods.com"
+	ddms:schemaQualifier="WSDL"
+	ddms:schemaHref="http://www.xmethods.com/sd/2001/TemperatureService?wsdl"/>

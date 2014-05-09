@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single tspi:Circle element, for unit testing -->
+<tspi:Circle xmlns:tspi="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlce="http://www.opengis.net/gml/3.3/ce" gml:id="CircleMinimalExample" srsName="http://metadata.ces.mil/mdr/ns/GSIP/crs/WGS84E_2D" numArc="1" interpolation="circularArcCenterPointWithRadius"><gml:pos>53.81 -2.10</gml:pos><gmlce:radius uom="http://metadata.ces.mil/mdr/ns/GSIP/uom/FOO/kilometre">20</gmlce:radius><gmlce:startAngle uom="http://metadata.ces.mil/mdr/ns/GSIP/uom/planeAngle/arcDegree">0</gmlce:startAngle><gmlce:endAngle uom="http://metadata.ces.mil/mdr/ns/GSIP/uom/planeAngle/arcDegree">360</gmlce:endAngle></tspi:Circle>

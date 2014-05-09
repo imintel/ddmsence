@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:geographicIdentifier element, for unit testing -->
+<ddms:geographicIdentifier xmlns:ddms="urn:us:mil:ces:metadata:ddms:4">
+	<ddms:name>The White House</ddms:name>
+	<ddms:region>Mid-Atlantic States</ddms:region>
+	<ddms:countryCode ddms:qualifier="ISO-3166" ddms:value="USA"/>
+	<ddms:subDivisionCode ddms:qualifier="ISO-3166" ddms:value="USA"/>
+</ddms:geographicIdentifier>
+				

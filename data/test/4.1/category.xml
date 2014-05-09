@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:category element, for unit testing -->
+<ddms:category
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:ism="urn:us:gov:ic:ism" 
+	ddms:qualifier="http://metadata.dod.mil/mdr/artifiact/MET/severeWeatherCode_enum/xml"
+	ddms:code="T"
+	ddms:label="TORNADO"
+	ism:classification="U"
+	ism:ownerProducer="USA" />

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ntk:AccessGroup element, for unit testing -->
+<ntk:AccessGroup xmlns:ntk="urn:us:gov:ic:ntk" xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA"><ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName><ntk:AccessGroupValue ism:classification="U" ism:ownerProducer="USA">WISE/RODCA</ntk:AccessGroupValue></ntk:AccessGroup>

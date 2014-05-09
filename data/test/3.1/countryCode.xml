@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:countryCode element, for unit testing -->
+<ddms:countryCode xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.1/" ddms:qualifier="ISO-3166" ddms:value="USA"/>
+	
