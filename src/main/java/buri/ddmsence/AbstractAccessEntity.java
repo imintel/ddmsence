@@ -23,7 +23,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import nu.xom.Element;
 import buri.ddmsence.ddms.IBuilder;
 import buri.ddmsence.ddms.IDDMSComponent;
 import buri.ddmsence.ddms.InvalidDDMSException;
@@ -35,6 +34,7 @@ import buri.ddmsence.ddms.security.ntk.SystemName;
 import buri.ddmsence.util.DDMSVersion;
 import buri.ddmsence.util.PropertyReader;
 import buri.ddmsence.util.Util;
+import nu.xom.Element;
 
 /**
  * Base class for NTK elements which describe system access rules for an {@link Individual}, {@link Group}, or 
