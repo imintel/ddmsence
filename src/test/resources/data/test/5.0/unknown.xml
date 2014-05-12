@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:unknown element, for unit testing -->
+<ddms:unknown xmlns:ddms="urn:us:mil:ces:metadata:ddms:5">
+	<ddms:name>Unknown Entity</ddms:name>
+	<ddms:phone>703-882-1000</ddms:phone>
+	<ddms:email>ddms@fgm.com</ddms:email>
+	<ddms:affiliation>DISA</ddms:affiliation>
+</ddms:unknown>	

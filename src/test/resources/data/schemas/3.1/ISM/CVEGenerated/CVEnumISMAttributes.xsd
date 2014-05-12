@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--UNCLASSIFIED--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            ism:ownerProducer="USA"
+            ism:classification="U"
+            ism:DESVersion="5"
+            ism:resourceElement="true"
+            ism:createDate="2010-05-30">
+   <xsd:annotation>
+      <xsd:documentation>
+                    W3C XML Schema fragment encoding types for Controlled vocabulary encodings CVEnumISMAttributes. This file is generated so edits should be made to the CVEnumISMAttributes the CVE it is based on instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+<!--Generated TYPE DEFINITIONS ..................................-->
+<!--*************************************************************-->
+<xsd:simpleType name="CVEnumISMAttributes">
+      <xsd:annotation>
+         <xsd:documentation>(U) All currently authorized ISM attribute names
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumISMAttributes.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction base="xsd:token"><!--(U) The value "classification" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="classification">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) classification attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "ownerProducer" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="ownerProducer">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) ownerProducer attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "SCIcontrols" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SCIcontrols">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SCIcontrols attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "SARIdentifier" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SARIdentifier">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SARIdentifier attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "atomicEnergyMarkings" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="atomicEnergyMarkings">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) atomicEnergyMarkings attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "disseminationControls" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="disseminationControls">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) disseminationControls attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "FGIsourceOpen" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="FGIsourceOpen">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) FGIsourceOpen attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "FGIsourceProtected" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="FGIsourceProtected">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) FGIsourceProtected attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "releasableTo" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="releasableTo">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) releasableTo attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "displayOnlyTo" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="displayOnlyTo">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) displayOnlyTo attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "nonICmarkings" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="nonICmarkings">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) nonICmarkings attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "classifiedBy" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="classifiedBy">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) classifiedBy attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "derivativelyClassifiedBy" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="derivativelyClassifiedBy">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) derivativelyClassifiedBy attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "classificationReason" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="classificationReason">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) classificationReason attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "nonUSControls" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="nonUSControls">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) nonUSControls attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "derivedFrom" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="derivedFrom">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) derivedFrom attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "declassDate" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="declassDate">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) declassDate attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "declassEvent" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="declassEvent">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) declassEvent attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "declassException" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="declassException">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) declassException attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "resourceElement" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="resourceElement">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) resourceElement attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "excludeFromRollup" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="excludeFromRollup">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) excludeFromRollup attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "createDate" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="createDate">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) createDate attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "compilationReason" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="compilationReason">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) compilationReason attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "notice" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="notice">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) notice attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "DESVersion" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="DESVersion">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) DESVersion attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "noticeDate" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="noticeDate">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) notice date attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "noticePOC" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="noticePOC">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) notice POC attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "noticeReason" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="noticeReason">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) notice Reason attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "compliesWith" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="compliesWith">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) compliesWith attribute</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

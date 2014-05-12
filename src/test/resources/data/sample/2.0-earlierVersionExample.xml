@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:Resource xsi:schemaLocation="http://metadata.dod.mil/mdr/ns/DDMS/2.0/ ../schemas/2.0/DDMS/ddms.xsd" xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ICISM="urn:us:gov:ic:ism:v2">
+	<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence:20"/>
+	<ddms:title ICISM:ownerProducer="USA" ICISM:classification="U">Earlier Version Service</ddms:title>
+	<ddms:description ICISM:ownerProducer="USA" ICISM:classification="U">A service which sends the latest edition of an entity back in time.</ddms:description>
+	<ddms:dates ddms:posted="2010-04-05" ddms:created="2015-04-05" />
+	<ddms:rights ddms:copyright="true" ddms:privacyAct="false" ddms:intellectualProperty="false"/>
+	<ddms:pointOfContact>
+		<ddms:Person>
+			<ddms:name>Brian Uri</ddms:name>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+			<ddms:email>ddmsence@urizone.net</ddms:email>
+		</ddms:Person>
+	</ddms:pointOfContact>
+	<ddms:format>
+		<ddms:Media>
+			<ddms:mimeType>application/time+travel</ddms:mimeType>
+			<ddms:medium>digital</ddms:medium>
+		</ddms:Media>
+	</ddms:format>
+	<ddms:subjectCoverage>
+		<ddms:Subject>
+			<ddms:keyword ddms:value="version"/>
+			<ddms:keyword ddms:value="time travel"/>
+			<ddms:keyword ddms:value="earlier"/>
+		</ddms:Subject>
+	</ddms:subjectCoverage>
+	<ddms:security ICISM:ownerProducer="USA" ICISM:classification="U"/>
+</ddms:Resource>

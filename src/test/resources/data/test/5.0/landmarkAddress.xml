@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single tspi:LandmarkAddress element, for unit testing -->
+<tspi:LandmarkAddress xmlns:tspi="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" xmlns:addr="http://www.fgdc.gov/schema/address/addr" xmlns:addr_type="http://www.fgdc.gov/schema/address/addr_type" action="ADD"><addr:CompleteLandmarkName><addr_type:LandmarkName>White's Ferry</addr_type:LandmarkName></addr:CompleteLandmarkName><addr_type:CompletePlaceName><addr_type:PlaceName>Dickerson</addr_type:PlaceName></addr_type:CompletePlaceName><addr_type:StateName>Maryland</addr_type:StateName><addr_type:ZipCode>20842</addr_type:ZipCode><addr_type:CountryName>USA</addr_type:CountryName></tspi:LandmarkAddress>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:category element, for unit testing -->
+<ddms:category xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/" 
+	ddms:qualifier="http://metadata.dod.mil/mdr/artifiact/MET/severeWeatherCode_enum/xml"
+	ddms:code="T"
+	ddms:label="TORNADO" />
+				

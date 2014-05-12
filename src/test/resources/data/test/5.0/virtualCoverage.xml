@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Represents a single ddms:virtualCoverage element, for unit testing -->
+<ddms:virtualCoverage xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ism="urn:us:gov:ic:ism" xmlns:ntk="urn:us:gov:ic:ntk" xmlns:virt="urn:us:gov:ic:virt" virt:address="123.456.789.0" virt:protocol="IP" ntk:access="namespace1|key1^value1|key2^value1|key2^value2" virt:network="NIPRNet" ism:classification="U" ism:ownerProducer="USA"/>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:keyword element, for unit testing -->
+<ddms:keyword xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/" ddms:value="Tornado"/> 
+				

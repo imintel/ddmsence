@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:resource 
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" 
+	xmlns:ism="urn:us:gov:ic:ism" 
+	xmlns:ntk="urn:us:gov:ic:ntk" 
+	xmlns:virt="urn:us:gov:ic:virt" 
+	ddms:compliesWith="DDMSRules">
+	<ddms:metacardInfo ism:classification="U" ism:ownerProducer="USA">
+		<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence:testIdentifier" />
+		<ddms:dates ddms:created="2013-04-05" />
+		<ddms:publisher>
+			<ddms:person>
+				<ddms:name>Brian</ddms:name>
+				<ddms:surname>Uri</ddms:surname>
+			</ddms:person>
+		</ddms:publisher>
+	</ddms:metacardInfo>
+	<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence"/>
+	<ddms:title ism:ownerProducer="USA" ism:classification="U">DDMSence</ddms:title>
+	<ddms:description ism:ownerProducer="USA" ism:classification="U">The open-source Java library for DDMS</ddms:description>
+	<ddms:language ddms:qualifier="http://purl.org/dc/elements/1.1/language" ddms:value="en"/>
+	<ddms:dates ddms:created="2010-03-24" ddms:posted="2010-03-24" ddms:approvedOn="2010-04-01" />
+	<ddms:rights ddms:copyright="true" ddms:privacyAct="false" ddms:intellectualProperty="true"/>
+	<ddms:creator ism:ownerProducer="USA" ism:classification="U">
+		<ddms:person>
+			<ddms:name>Brian Uri</ddms:name>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+			<ddms:email>ddmsence@urizone.net</ddms:email>
+		</ddms:person>
+	</ddms:creator>
+	<ddms:publisher ism:classification="U" ism:ownerProducer="USA">
+		<ddms:person>
+			<ddms:name>Brian Uri</ddms:name>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+			<ddms:email>ddmsence@urizone.net</ddms:email>
+		</ddms:person>
+	</ddms:publisher>
+	<ddms:pointOfContact>
+		<ddms:person>
+			<ddms:name>Brian Uri</ddms:name>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+			<ddms:email>ddmsence@urizone.net</ddms:email>
+		</ddms:person>
+	</ddms:pointOfContact>
+	<ddms:subjectCoverage>
+		<ddms:keyword ddms:value="DDMSence"/>
+		<ddms:keyword ddms:value="metadata"/>
+		<ddms:keyword ddms:value="discovery"/>
+		<ddms:keyword ddms:value="DDMS"/>
+		<ddms:keyword ddms:value="open source"/>
+		<ddms:keyword ddms:value="Java"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Asset" ddms:code="Asset" ddms:label="Asset"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Capability" ddms:code="Capability" ddms:label="Capability"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Function" ddms:code="Function" ddms:label="Function"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Enterprise_information_environment_capability" ddms:code="Enterprise_information_environment_capability" ddms:label="Enterprise information environment capability"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Enterprise_computing_capability" ddms:code="Enterprise_computing_capability" ddms:label="Enterprise computing capability"/>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/ns/TaxFG/0.75c/Core_Tax_0.75c.owl#Core_enterprise_services_capability" ddms:code="Core_enterprise_services_capability" ddms:label="Core enterprise services capability"/>
+	</ddms:subjectCoverage>
+	<ddms:temporalCoverage>
+		<ddms:start>2010-03-24T12:00:00Z</ddms:start>
+		<ddms:end>Not Applicable</ddms:end>
+	</ddms:temporalCoverage>
+</ddms:resource>

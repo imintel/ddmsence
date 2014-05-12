@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:productionMetric element, for unit testing -->
+<ddms:productionMetric
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ddms:subject="FOOD" ddms:coverage="AFG"
+	ism:classification="U" ism:ownerProducer="USA" />

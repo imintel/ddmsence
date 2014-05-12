@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:Resource xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/" xmlns:ICISM="urn:us:gov:ic:ism" xmlns:gml="http://www.opengis.net/gml/3.2" 
+	ICISM:resourceElement="true" ICISM:DESVersion="2" ICISM:createDate="2010-01-21" ICISM:classification="U" ICISM:ownerProducer="AUS GBR USA">
+	<ddms:identifier ddms:qualifier="http://metadata.dod.mil/mdr/ns/MDR/0.1/MDR.owl#URI" ddms:value="urn:buri:ddmsence:invalid"/>
+	<ddms:title ICISM:classification="U" ICISM:ownerProducer="AUS GBR USA">Invalid Resource</ddms:title>
+	<ddms:description ICISM:classification="U" ICISM:ownerProducer="AUS GBR USA">This resource is invalid because it has an invalid security element.</ddms:description>
+	<ddms:pointOfContact ICISM:classification="U" ICISM:ownerProducer="AUS GBR USA">
+		<ddms:Person>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+		</ddms:Person>	
+	</ddms:pointOfContact>
+	<ddms:subjectCoverage>
+		<ddms:Subject>
+			<ddms:keyword ddms:value="DDMSence"/>
+		</ddms:Subject>
+	</ddms:subjectCoverage>
+	<ddms:security ICISM:ownerProducer="USA" ICISM:classification="SuperSecret" ICISM:excludeFromRollup="true"/>
+</ddms:Resource>

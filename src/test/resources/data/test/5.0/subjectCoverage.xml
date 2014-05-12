@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:subjectCoverage element, for unit testing -->
+<ddms:subjectCoverage xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA">
+	<ddms:keyword ddms:value="DDMSence"/>
+	<ddms:keyword ddms:value="Uri"/>
+	<ddms:category ddms:qualifier="urn:buri:ddmsence:categories" ddms:code="DDMS" ddms:label="DDMS"/>
+	<ddms:productionMetric ddms:subject="FOOD" ddms:coverage="AFG" ism:classification="U" ism:ownerProducer="USA" />
+	<ddms:nonStateActor ism:classification="U" ism:ownerProducer="USA" ddms:order="1" ddms:qualifier="urn:sample">Laotian Monks</ddms:nonStateActor>
+</ddms:subjectCoverage>

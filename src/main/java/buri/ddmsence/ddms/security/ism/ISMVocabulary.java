@@ -21,6 +21,7 @@ package buri.ddmsence.ddms.security.ism;
 
 import buri.ddmsence.ddms.InvalidDDMSException;
 import buri.ddmsence.util.DDMSVersion;
+//import buri.ddmsence.util.PropertyReader;
 import buri.ddmsence.util.PropertyReader;
 import buri.ddmsence.util.Util;
 import nu.xom.*;
@@ -268,11 +269,20 @@ public class ISMVocabulary {
      */
     private static void loadEnumeration(String enumLocation, Builder builder, String enumerationKey)
             throws ParsingException, IOException {
-        InputStream stream = new ISMVocabulary().getClass().getResourceAsStream(enumLocation + enumerationKey);
-        Document doc = builder.build(stream);
+        System.out.println("LOC ++++++ "+enumLocation+enumerationKey);
+        InputStream stream = ISMVocabulary.class.getClassLoader().getResourceAsStream(enumLocation.substring(1) + enumerationKey);
+        System.out.println("Build! "+stream);
+        Document doc;
+        try{
+             doc = builder.build(stream);
+        } catch(Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
         Set<String> tokens = new TreeSet<String>();
         Set<String> patterns = new HashSet<String>();
         String cveNamespace = PropertyReader.getProperty(getDDMSVersion().getVersion() + ".ism.cve.xmlNamespace");
+        System.out.println("NS ++++++ "+cveNamespace);
         Element enumerationElement = doc.getRootElement().getFirstChildElement(ENUMERATION_NAME, cveNamespace);
         Elements terms = enumerationElement.getChildElements(TERM_NAME, cveNamespace);
         for (int i = 0; i < terms.size(); i++) {
@@ -306,18 +316,6 @@ public class ISMVocabulary {
      */
     public static Set<String> getEnumerationTokens(String enumerationKey) {
         updateEnumLocation();
-        System.out.println(LOCATION_TO_ENUM_TOKENS.size());
-        for (Map.Entry<String, Map<String, Set<String>>> stuff : LOCATION_TO_ENUM_TOKENS.entrySet()) {
-            String k = stuff.getKey();
-            System.out.println(k);
-            for (Map.Entry<String, Set<String>> ent : stuff.getValue().entrySet()) {
-                System.out.println("\t" + ent.getKey());
-                for (String s : ent.getValue()) {
-                    System.out.println("\t" + s);
-                }
-            }
-
-        }
         Set<String> vocabulary = LOCATION_TO_ENUM_TOKENS.get(getLastEnumLocation()).get(enumerationKey);
 
         if (vocabulary == null) {

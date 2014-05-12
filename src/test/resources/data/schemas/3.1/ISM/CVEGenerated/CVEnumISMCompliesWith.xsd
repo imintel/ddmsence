@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--UNCLASSIFIED--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            ism:ownerProducer="USA"
+            ism:classification="U"
+            ism:DESVersion="5"
+            ism:resourceElement="true"
+            ism:createDate="2010-05-30">
+   <xsd:annotation>
+      <xsd:documentation>
+                    W3C XML Schema fragment encoding types for Controlled vocabulary encodings CVEnumISMCompliesWith. This file is generated so edits should be made to the CVEnumISMCompliesWith the CVE it is based on instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+<!--Generated TYPE DEFINITIONS ..................................-->
+<!--*************************************************************-->
+<xsd:simpleType name="CVEnumISMCompliesWithValues">
+      <xsd:annotation>
+         <xsd:documentation>(U) Current rule set names that documents may comply with
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumISMCompliesWith.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction base="xsd:token"><!--(U) The value "ICD-710" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="ICD-710">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) Document claims compliance with the rules in ICD-710 that have been encoded into ISM</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "DoD5230.24" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="DoD5230.24">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) Document claims compliance with the rules in DoD5230.24 that have been encoded into ISM</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="CVEnumISMCompliesWith">
+      <xsd:restriction>
+         <xsd:simpleType>
+            <xsd:list itemType="CVEnumISMCompliesWithValues"/>
+         </xsd:simpleType>
+         <xsd:maxLength value="2"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

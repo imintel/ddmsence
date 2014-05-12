@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:boundingBox element, for unit testing -->
+<ddms:boundingBox xmlns:ddms="urn:us:mil:ces:metadata:ddms:4">
+	<ddms:westBL>12.3</ddms:westBL>
+	<ddms:eastBL>23.4</ddms:eastBL>
+	<ddms:southBL>34.5</ddms:southBL>
+	<ddms:northBL>45.6</ddms:northBL>
+</ddms:boundingBox>
+				

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--UNCLASSIFIED--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ism="urn:us:gov:ic:ism"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            ism:ownerProducer="USA"
+            ism:classification="U"
+            ism:DESVersion="5"
+            ism:resourceElement="true"
+            ism:createDate="2010-03-12">
+   <xsd:annotation>
+      <xsd:documentation>
+                    W3C XML Schema fragment encoding types for Controlled vocabulary encodings CVEnumISMNonIC. This file is generated so edits should be made to the CVEnumISMNonIC the CVE it is based on instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+<!--Generated TYPE DEFINITIONS ..................................-->
+<!--*************************************************************-->
+<xsd:simpleType name="CVEnumISMNonICValues">
+      <xsd:annotation>
+         <xsd:documentation>(U) All currently valid Non-IC markings from the published register
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumISMNonIC.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction base="xsd:token"><!--(U) The value "SC" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SC">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SPECIAL CATEGORY</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "SINFO" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SINFO">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SENSITIVE INFORMATION</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "DS" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="DS">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) LIMITED DISTRIBUTION</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "XD" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="XD">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) EXCLUSIVE DISTRIBUTION</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "ND" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="ND">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) NO DISTRIBUTION</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "SBU" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SBU">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SENSITIVE BUT UNCLASSIFIED</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "SBU-NF" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="SBU-NF">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) SENSITIVE BUT UNCLASSIFIED NOFORN</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "LES" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="LES">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) LAW ENFORCEMENT SENSITIVE</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <!--(U) The value "LES-NF" is classified (U) --><xsd:enumeration ism:classification="U" ism:ownerProducer="USA" value="LES-NF">
+            <xsd:annotation>
+               <xsd:documentation ism:classification="U" ism:ownerProducer="USA">(U) LAW ENFORCEMENT SENSITIVE NOFORN</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="CVEnumISMNonIC">
+      <xsd:restriction>
+         <xsd:simpleType>
+            <xsd:list itemType="CVEnumISMNonICValues"/>
+         </xsd:simpleType>
+         <xsd:maxLength value="9"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:identifier element, for unit testing -->
+<ddms:identifier 
+	xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.1/"
+	ddms:qualifier="URI" 
+	ddms:value="urn:buri:ddmsence:testIdentifier" />

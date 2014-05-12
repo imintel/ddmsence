@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:type element, for unit testing -->
+<ddms:type
+	xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/"
+	ddms:qualifier="DCMITYPE"
+	ddms:value="http://purl.org/dc/dcmitype/Text"/>
+			

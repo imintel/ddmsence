@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ntk:AccessIndividualValue element, for unit testing -->
+<ntk:AccessIndividualValue xmlns:ism="urn:us:gov:ic:ism" xmlns:ntk="urn:us:gov:ic:ntk" ntk:id="ID" ntk:IDReference="ID" ntk:qualifier="qualifier" ism:classification="U" ism:ownerProducer="USA">user_2321889:Doe_John_H</ntk:AccessIndividualValue>

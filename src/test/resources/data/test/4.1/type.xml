@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:type element, for unit testing -->
+<ddms:type
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:4"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ddms:qualifier="DCMITYPE"
+	ddms:value="http://purl.org/dc/dcmitype/Text"
+	ism:classification="U"
+	ism:ownerProducer="USA">Description</ddms:type>
+			

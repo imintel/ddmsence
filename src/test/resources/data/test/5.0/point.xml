@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single tspi:Point element, for unit testing -->
+<tspi:Point xmlns:tspi="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="PointMinimalExample" srsDimension="3" srsName="http://metadata.ces.mil/mdr/ns/GSIP/crs/WGS84E_MSL_H"><gml:pos>53.8093938 -2.12955 4572</gml:pos></tspi:Point>

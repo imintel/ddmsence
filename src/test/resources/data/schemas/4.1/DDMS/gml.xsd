@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.opengis.net/gml/3.2"
+   elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.2.1">
+   
+   <xs:element name="exterior" type="gml:RingType" />
+   <xs:element name="LinearRing">
+      <xs:complexType>
+         <xs:choice>
+            <xs:element ref="gml:pos" minOccurs="4" maxOccurs="unbounded" />
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="Polygon" type="gml:PolygonType" />
+   <xs:element name="Point" type="gml:PointType" />
+   <xs:element name="pos" type="gml:DirectPositionType" />
+   
+   <xs:attribute name="id" type="xs:ID" />
+   
+   <xs:simpleType name="doubleList">
+      <xs:list itemType="xs:double" />
+   </xs:simpleType>
+   <xs:simpleType name="NCNameList">
+      <xs:list itemType="xs:NCName" />
+   </xs:simpleType>
+   
+   <xs:complexType name="DirectPositionType">
+      <xs:simpleContent>
+         <xs:extension base="gml:doubleList">
+            <xs:attributeGroup ref="gml:SRSReferenceGroup" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="PolygonType">
+      <xs:all>
+         <xs:element ref="gml:exterior" />
+      </xs:all>
+      <xs:attributeGroup ref="gml:SRSReferenceGroupSRSNameRequired" />
+      <xs:attribute ref="gml:id" use="required" />
+   </xs:complexType>
+   <xs:complexType name="PointType">
+      <xs:all>
+         <xs:element ref="gml:pos" />
+      </xs:all>
+      <xs:attributeGroup ref="gml:SRSReferenceGroupSRSNameRequired" />
+      <xs:attribute ref="gml:id" use="required" />
+   </xs:complexType>
+   <xs:complexType name="RingType">
+      <xs:sequence>
+         <xs:element ref="gml:LinearRing" />
+      </xs:sequence>
+   </xs:complexType>
+   
+   <xs:attributeGroup name="SRSInformationGroup">
+      <xs:attribute name="axisLabels" type="gml:NCNameList" use="optional" />
+      <xs:attribute name="uomLabels" type="gml:NCNameList" use="optional" />
+   </xs:attributeGroup>
+   <xs:attributeGroup name="SRSReferenceGroup">
+      <xs:attribute name="srsName" type="xs:anyURI" use="optional" />
+      <xs:attribute name="srsDimension" type="xs:positiveInteger" use="optional" />
+      <xs:attributeGroup ref="gml:SRSInformationGroup" />
+   </xs:attributeGroup>
+   <xs:attributeGroup name="SRSReferenceGroupSRSNameRequired">
+      <xs:attribute name="srsName" type="xs:anyURI" use="required" />
+      <xs:attribute name="srsDimension" type="xs:positiveInteger" use="optional" />
+      <xs:attributeGroup ref="gml:SRSInformationGroup" />
+   </xs:attributeGroup>
+   
+</xs:schema>

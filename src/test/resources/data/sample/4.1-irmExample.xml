@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ANY CLASSIFICATION MARKINGS IN THIS INSTANCE DOCUMENT ARE FOR EXAMPLE PURPOSES ONLY, NOT AN ACTUAL INDICATION OF THE DOCUMENT'S CLASSIFICATION, WHICH IS UNCLASSIFIED-->
+<ddms:resource ICISM:resourceElement="true" ICISM:classification="U" ntk:DESVersion="7" ICISM:DESVersion="9" ICISM:createDate="2011-09-14" ICISM:ownerProducer="USA" xmlns:ICISM="urn:us:gov:ic:ism" xmlns:ntk="urn:us:gov:ic:ntk" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddms="urn:us:mil:ces:metadata:ddms:4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:us:mil:ces:metadata:ddms:4 ../schemas/4.1/DDMS/ddms.xsd">
+	<ddms:metacardInfo>
+		<ddms:identifier ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://www.dod.mil/index.html"/>
+		<ddms:dates ddms:created="2011-08-11" ddms:receivedOn="2011-08-12"/>
+		<ddms:publisher ICISM:classification="U" ICISM:ownerProducer="USA">
+			<ddms:organization ddms:acronym="ARMY">
+				<ddms:name>ARMY</ddms:name>
+				<ddms:phone>555-555-5555</ddms:phone>
+				<ddms:email>army@army.mil</ddms:email>
+				<ddms:subOrganization ICISM:classification="U" ICISM:ownerProducer="USA">NGIC</ddms:subOrganization>
+			</ddms:organization>
+		</ddms:publisher>
+		<ddms:description ICISM:classification="U" ICISM:ownerProducer="USA">This is an example of a card produced for DDMS</ddms:description>
+		<ddms:processingInfo ICISM:classification="U" ddms:dateProcessed="2011-08-19" ICISM:ownerProducer="USA">XSLT Transformation to convert DDMS 3.0 to DDMS 4.1.		
+		</ddms:processingInfo>
+		<ddms:revisionRecall ddms:revisionID="1" ICISM:classification="U" ddms:revisionType="ADMINISTRATIVE RECALL" ICISM:ownerProducer="USA"/>
+		<ddms:recordsManagementInfo ddms:vitalRecordIndicator="true">
+			<ddms:recordKeeper>
+				<ddms:recordKeeperID>#289-99202.9</ddms:recordKeeperID>
+				<ddms:organization>
+					<ddms:name>Agency Z</ddms:name>
+				</ddms:organization>
+			</ddms:recordKeeper>
+			<ddms:applicationSoftware ICISM:classification="U" ICISM:ownerProducer="USA">IRM Generator 2L-9</ddms:applicationSoftware>
+		</ddms:recordsManagementInfo>
+		<ddms:noticeList ICISM:classification="U" ICISM:ownerProducer="USA">
+			<ICISM:Notice ICISM:classification="U" ICISM:ownerProducer="USA" ICISM:unregisteredNoticeType="Mike1">
+                <ICISM:NoticeText ICISM:classification="U" ICISM:ownerProducer="USA">
+                    NAMES NOT FURTHER IDENTIFIED UNLESS OTHERWISE INDICATED 
+                </ICISM:NoticeText>
+            </ICISM:Notice>
+		</ddms:noticeList>
+	</ddms:metacardInfo>
+	<ddms:identifier ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://www.dod.mil/index.html"/>
+	<ddms:title ICISM:classification="U" ICISM:ownerProducer="USA">Department of Defense Discovery Metadata Specification (DDMS)</ddms:title>
+	<ddms:subtitle ICISM:classification="U" ICISM:ownerProducer="USA">Review Version 1.2</ddms:subtitle>
+	<ddms:description ICISM:classification="U" ICISM:ownerProducer="USA">This publication is an analysis of the logistics of re-supplying the cave complex at Tora Bora.</ddms:description>
+	<ddms:language ddms:qualifier="urn:iso:std:639:-1:ed-1:en,fr" ddms:value="fr"/>
+	<ddms:dates ddms:posted="2003-02-17" ddms:created="2003-02-17" ddms:validTil="2003-02-17" ddms:infoCutOff="2001-10-31T17:00:00-05:00" ddms:approvedOn="2003-02-17" ddms:receivedOn="2003-02-17"/>
+	<ddms:rights ddms:privacyAct="true" ddms:intellectualProperty="true" ddms:copyright="false"/>
+	<ddms:source ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://www.xmethods.com" ddms:schemaQualifier="WSDL" ddms:schemaHref="http://www.xmethods.com?wsdl"/>
+	<ddms:type ddms:qualifier="urn:us:gov:ic:activity" ddms:value="crisis" ICISM:classification="U" ICISM:ownerProducer="USA">A critical crisis activity</ddms:type>
+	<ddms:creator ICISM:classification="U" ICISM:ownerProducer="USA" ICISM:pocType="DoD-Dist-B">
+		<ddms:person>
+			<ddms:name>John Q.</ddms:name>
+			<ddms:surname>Jones</ddms:surname>
+			<ddms:phone>222-222-2222</ddms:phone>
+			<ddms:email>jq.jones@someagency.mil</ddms:email>
+			<ddms:userID>12345678</ddms:userID>
+			<ddms:affiliation>U.S. Army</ddms:affiliation>
+		</ddms:person>
+	</ddms:creator>
+	<ddms:publisher ICISM:classification="U" ICISM:ownerProducer="USA" ICISM:pocType="DoD-Dist-B">
+		<ddms:person>
+			<ddms:name>John Q.</ddms:name>
+			<ddms:surname>Jones</ddms:surname>
+			<ddms:phone>222-222-2222</ddms:phone>
+			<ddms:email>jq.jones@someagency.mil</ddms:email>
+			<ddms:userID>12345678</ddms:userID>
+			<ddms:affiliation>U.S. Army</ddms:affiliation>
+		</ddms:person>
+	</ddms:publisher>
+	<ddms:contributor ICISM:classification="U" ICISM:ownerProducer="USA" ICISM:pocType="DoD-Dist-B">
+		<ddms:person>
+			<ddms:name>John Q.</ddms:name>
+			<ddms:surname>Jones</ddms:surname>
+			<ddms:phone>222-222-2222</ddms:phone>
+			<ddms:email>jq.jones@someagency.mil</ddms:email>		
+			<ddms:userID>12345678</ddms:userID>
+			<ddms:affiliation>U.S. Army</ddms:affiliation>
+		</ddms:person>
+	</ddms:contributor>
+	<ddms:pointOfContact ICISM:pocType="DoD-Dist-B">
+		<ddms:person>
+			<ddms:name>John Q.</ddms:name>
+			<ddms:surname>Jones</ddms:surname>
+			<ddms:phone>222-222-2222</ddms:phone>
+			<ddms:email>jq.jones@someagency.mil</ddms:email>
+			<ddms:userID>12345678</ddms:userID>
+			<ddms:affiliation>U.S. Army</ddms:affiliation>
+		</ddms:person>
+	</ddms:pointOfContact>
+	<ddms:format>
+		<ddms:mimeType>text/xml</ddms:mimeType>
+		<ddms:extent ddms:qualifier="sizeBytes" ddms:value="75000"/>
+		<ddms:medium>digital</ddms:medium>
+	</ddms:format>
+	<ddms:subjectCoverage>
+		<ddms:category ddms:qualifier="http://metadata.dod.mil/mdr/artifact/MET/severeWeatherCode_enum.xml" ddms:code="T" ddms:label="TORNADO"/>
+		<ddms:keyword ddms:value="Tornado"/>
+		<ddms:keyword ddms:value="Cyclone"/>
+		<ddms:productionMetric ICISM:classification="U" ICISM:ownerProducer="USA" ddms:subject="WEATHER" ddms:coverage="AFG"/>
+	</ddms:subjectCoverage>
+	<ddms:virtualCoverage ddms:protocol="IP" ddms:address="222.173.190.239"/>
+	<ddms:temporalCoverage ICISM:classification="U" ICISM:ownerProducer="USA">
+		<ddms:start>2001-01-01T00:01:00Z</ddms:start>
+		<ddms:end>2001-12-31T23:00:00Z</ddms:end>
+	</ddms:temporalCoverage>
+	<ddms:geospatialCoverage>
+		<ddms:geographicIdentifier>
+			<ddms:facilityIdentifier ddms:beNumber="1234DD56789" ddms:osuffix="DD123"/>
+		</ddms:geographicIdentifier>
+	</ddms:geospatialCoverage>
+	<ddms:geospatialCoverage ICISM:classification="U" ICISM:ownerProducer="USA">
+		<ddms:boundingBox>
+			<ddms:westBL>39</ddms:westBL>
+			<ddms:eastBL>48</ddms:eastBL>
+			<ddms:southBL>29</ddms:southBL>
+			<ddms:northBL>38</ddms:northBL>
+		</ddms:boundingBox>
+	</ddms:geospatialCoverage>
+	<ddms:geospatialCoverage ddms:order="1">
+		<ddms:geographicIdentifier>
+			<ddms:subDivisionCode ddms:qualifier="urn:us:gov:ic:cvenum:irm:coverage:iso3166-2" ddms:value="LA-VT"/>
+		</ddms:geographicIdentifier>
+	</ddms:geospatialCoverage>
+	<ddms:relatedResource ddms:relationship="http://purl.org/dc/terms/references"	ddms:direction="outbound" ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://en.wikipedia.org/wiki/Tank">
+		<ddms:link xlink:type="locator" xlink:href="http://en.wikipedia.org/wiki/Tank"/>
+	</ddms:relatedResource>
+	<ddms:resourceManagement>
+		<ddms:revisionRecall ddms:revisionID="1" ICISM:classification="U" ddms:revisionType="SUBSTANTIVE REVISION" ICISM:ownerProducer="USA">There was a arithmetic error. The base contains 100,000 troops NOT 1,000 troops</ddms:revisionRecall>
+		<ddms:processingInfo ICISM:classification="U" ddms:dateProcessed="2011-08-19" ICISM:ownerProducer="USA">XSLT Transformation to convert DDMS 2.0 to DDMS 3.1.
+		</ddms:processingInfo>
+	</ddms:resourceManagement>
+	<ddms:security ICISM:classification="S" ICISM:excludeFromRollup="true" ICISM:ownerProducer="USA"	ICISM:classificationReason="1.4(b)" ICISM:classifiedBy="John Doe, Position Title" ICISM:declassDate="2010-01-01" ICISM:SCIcontrols="SI" ICISM:disseminationControls="REL" ICISM:FGIsourceOpen="AUS NZL NATO" ICISM:releasableTo="USA AUS">
+		<ddms:noticeList ICISM:classification="U" ICISM:ownerProducer="USA">
+			 <ICISM:Notice ICISM:noticeType="DS" ICISM:classification="U" ICISM:ownerProducer="USA">
+                <ICISM:NoticeText ICISM:classification="U" ICISM:ownerProducer="USA">
+                Distribution authorized to DoD, IAW 10 U.S.C. §§130 &amp; 455. Release authorized to U.S. 
+                DoD contractors IAW 48 C.F.R §252.245-7000. Refer other requests to: Headquarters, 
+                NGA, ATTN: Release Officer, Mail Stop D-120, 4600 Sangamore Road, Bethesda, MD 
+                20816-5003. Destroy IAW DoD 5030.59. Removal of this caveat is prohibited.
+                </ICISM:NoticeText>
+            </ICISM:Notice>
+		</ddms:noticeList>
+		<ntk:Access ICISM:classification="U" ICISM:ownerProducer="USA" ntk:externalReference="true">
+            <ntk:AccessGroupList>
+                <ntk:AccessGroup ICISM:classification="U" ICISM:ownerProducer="USA">
+                    <ntk:AccessSystemName ICISM:classification="U" ICISM:ownerProducer="USA">DIAS</ntk:AccessSystemName>
+                    <ntk:AccessGroupValue ICISM:classification="U" ICISM:ownerProducer="USA">WISE/RODCA</ntk:AccessGroupValue>
+                </ntk:AccessGroup>
+            </ntk:AccessGroupList>
+        </ntk:Access>
+	</ddms:security>
+</ddms:resource>

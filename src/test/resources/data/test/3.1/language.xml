@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:language element, for unit testing -->
+<ddms:language
+	xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.1/"
+	ddms:qualifier="http://purl.org/dc/elements/1.1/language"
+	ddms:value="en" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:format element, for unit testing -->
+<ddms:format xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/">
+	<ddms:Media>
+		<ddms:mimeType>text/xml</ddms:mimeType>
+		<ddms:extent ddms:qualifier="sizeBytes" ddms:value="75000"/>
+		<ddms:medium>digital</ddms:medium>
+	</ddms:Media>
+</ddms:format>
+	

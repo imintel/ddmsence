@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:Person element, for unit testing -->
+<ddms:Person xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/">
+	<ddms:name>Brian</ddms:name>
+	<ddms:name>BU</ddms:name>
+	<ddms:surname>Uri</ddms:surname>
+	<ddms:userID>123</ddms:userID>
+	<ddms:affiliation>DISA</ddms:affiliation>
+	<ddms:phone>703-885-1000</ddms:phone>
+	<ddms:email>ddms@fgm.com</ddms:email>
+</ddms:Person>	

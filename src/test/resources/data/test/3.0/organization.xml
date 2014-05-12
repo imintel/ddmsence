@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:Organization element, for unit testing -->
+<ddms:Organization xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/3.0/">
+	<ddms:name>DISA</ddms:name>
+	<ddms:name>PEO-GES</ddms:name>
+	<ddms:phone>703-882-1000</ddms:phone>
+	<ddms:phone>703-885-1000</ddms:phone>
+	<ddms:email>ddms@fgm.com</ddms:email>
+</ddms:Organization>	

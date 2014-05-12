@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ntk:AccessProfileList element, for unit testing -->
+<ntk:AccessProfileList xmlns:ntk="urn:us:gov:ic:ntk" xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA"><ntk:AccessProfile ism:classification="U" ism:ownerProducer="USA"><ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName><ntk:AccessProfileValue ism:classification="U" ism:ownerProducer="USA" ntk:vocabulary="vocabulary">profile</ntk:AccessProfileValue></ntk:AccessProfile></ntk:AccessProfileList>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ntk:Access element, for unit testing -->
+<ntk:Access xmlns:ntk="urn:us:gov:ic:ntk" xmlns:ism="urn:us:gov:ic:ism" ntk:externalReference="true" ism:classification="U" ism:ownerProducer="USA">
+	<ntk:AccessIndividualList>
+		<ntk:AccessIndividual ism:classification="U" ism:ownerProducer="USA">
+			<ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName>
+			<ntk:AccessIndividualValue ism:classification="U" ism:ownerProducer="USA">user_2321889:Doe_John_H</ntk:AccessIndividualValue>
+		</ntk:AccessIndividual>
+	</ntk:AccessIndividualList>
+	<ntk:AccessGroupList>
+		<ntk:AccessGroup ism:classification="U" ism:ownerProducer="USA">
+			<ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName>
+			<ntk:AccessGroupValue ism:classification="U" ism:ownerProducer="USA">WISE/RODCA</ntk:AccessGroupValue>
+		</ntk:AccessGroup>
+	</ntk:AccessGroupList>
+	<ntk:AccessProfileList ism:classification="U" ism:ownerProducer="USA">
+		<ntk:AccessProfile ism:classification="U" ism:ownerProducer="USA">
+			<ntk:AccessSystemName ism:classification="U" ism:ownerProducer="USA">DIAS</ntk:AccessSystemName>
+			<ntk:AccessProfileValue ism:classification="U" ism:ownerProducer="USA" ntk:vocabulary="vocabulary">profile</ntk:AccessProfileValue>
+		</ntk:AccessProfile>
+	</ntk:AccessProfileList>
+</ntk:Access>

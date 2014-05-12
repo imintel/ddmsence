@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:recordsManagementInfo element, for unit testing -->
+<ddms:recordsManagementInfo xmlns:ddms="urn:us:mil:ces:metadata:ddms:4" ddms:vitalRecordIndicator="true">
+	<ddms:recordKeeper>
+		<ddms:recordKeeperID>#289-99202.9</ddms:recordKeeperID>
+		<ddms:organization>
+			<ddms:name>DISA</ddms:name>
+		</ddms:organization>
+	</ddms:recordKeeper>
+	<ddms:applicationSoftware xmlns:ism="urn:us:gov:ic:ism" ism:classification="U" ism:ownerProducer="USA">IRM Generator 2L-9</ddms:applicationSoftware>
+</ddms:recordsManagementInfo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:publisher element, for unit testing -->
+<ddms:publisher
+	xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+	xmlns:ism="urn:us:gov:ic:ism"
+	ism:classification="U"
+	ism:ownerProducer="USA"
+	ism:pocType="DoD-Dist-B">
+	<ddms:service>
+		<ddms:name>https://metadata.dod.mil/ebxmlquery/soap</ddms:name>
+	</ddms:service>
+</ddms:publisher>	

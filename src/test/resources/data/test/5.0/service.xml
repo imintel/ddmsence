@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:service element, for unit testing -->
+<ddms:service xmlns:ddms="urn:us:mil:ces:metadata:ddms:5">
+	<ddms:name>https://metadata.dod.mil/ebxmlquery/soap</ddms:name>
+	<ddms:phone>703-882-1000</ddms:phone>
+	<ddms:email>ddms@fgm.com</ddms:email>
+	<ddms:affiliation>DISA</ddms:affiliation>
+</ddms:service>	

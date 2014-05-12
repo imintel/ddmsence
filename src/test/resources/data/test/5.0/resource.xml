@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ddms:resource xmlns:ddms="urn:us:mil:ces:metadata:ddms:5" xmlns:ntk="urn:us:gov:ic:ntk" xmlns:ism="urn:us:gov:ic:ism" xmlns:virt="urn:us:gov:ic:virt" ddms:compliesWith="DDMSRules">
+	<ddms:metacardInfo ism:classification="U" ism:ownerProducer="USA"><ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence:testIdentifier" /><ddms:dates ddms:created="2003" /><ddms:publisher><ddms:person><ddms:name>Brian</ddms:name><ddms:surname>Uri</ddms:surname></ddms:person></ddms:publisher></ddms:metacardInfo>
+	<ddms:identifier ddms:qualifier="URI" ddms:value="urn:buri:ddmsence:testIdentifier" />
+	<ddms:title ism:classification="U" ism:ownerProducer="USA">DDMSence</ddms:title>
+	<ddms:subtitle ism:classification="U" ism:ownerProducer="USA">Version 0.1</ddms:subtitle>
+	<ddms:description ism:classification="U" ism:ownerProducer="USA">A transformation service.</ddms:description>
+	<ddms:language ddms:qualifier="http://purl.org/dc/elements/1.1/language" ddms:value="en" />
+	<ddms:dates ddms:created="2003" />
+	<ddms:rights ddms:privacyAct="true" ddms:intellectualProperty="true" ddms:copyright="true"/>
+	<ddms:source ddms:value="http://www.xmethods.com" />
+	<ddms:type ddms:qualifier="DCMITYPE" ddms:value="http://purl.org/dc/dcmitype/Text"/>
+	<ddms:creator>
+		<ddms:organization>
+			<ddms:name>DISA</ddms:name>
+		</ddms:organization>	
+	</ddms:creator>
+	<ddms:publisher>
+		<ddms:person>
+			<ddms:name>Brian</ddms:name>
+			<ddms:surname>Uri</ddms:surname>
+		</ddms:person>	
+	</ddms:publisher>
+	<ddms:contributor>
+		<ddms:service>
+			<ddms:name>https://metadata.dod.mil/ebxmlquery/soap</ddms:name>
+		</ddms:service>	
+	</ddms:contributor>
+	<ddms:pointOfContact>
+		<ddms:unknown>
+			<ddms:name>UnknownEntity</ddms:name>
+		</ddms:unknown>	
+	</ddms:pointOfContact>
+	<ddms:format>
+		<ddms:mimeType>text/xml</ddms:mimeType>
+	</ddms:format>
+	<ddms:subjectCoverage>
+		<ddms:keyword ddms:value="DDMSence"/>
+	</ddms:subjectCoverage>
+	<ddms:virtualCoverage virt:address="123.456.789.0" virt:protocol="IP" />
+	<ddms:temporalCoverage>
+		<ddms:start>1979-09-15</ddms:start>
+		<ddms:end>Not Applicable</ddms:end>
+	</ddms:temporalCoverage>
+	<ddms:geospatialCoverage>
+		<ddms:boundingGeometry>
+			<tspi:Point xmlns:tspi="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="PointMinimalExample" srsDimension="3" srsName="http://metadata.ces.mil/mdr/ns/GSIP/crs/WGS84E_MSL_H">
+				<gml:pos>32.1 40.1</gml:pos>
+			</tspi:Point>
+		</ddms:boundingGeometry>
+	</ddms:geospatialCoverage>
+	<ddms:relatedResource ddms:relationship="http://purl.org/dc/terms/references" ddms:direction="outbound" ddms:qualifier="http://purl.org/dc/terms/URI" ddms:value="http://en.wikipedia.org/wiki/Tank">
+		<ddms:link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="locator" xlink:href="http://en.wikipedia.org/wiki/Tank" xlink:role="role"/>
+	</ddms:relatedResource>
+	<ddms:resourceManagement ism:classification="U" ism:ownerProducer="USA"><ddms:processingInfo ism:classification="U" ism:ownerProducer="USA" ddms:dateProcessed="2011-08-19">XSLT Transformation to convert DDMS 2.0 to DDMS 3.1.</ddms:processingInfo></ddms:resourceManagement>
+</ddms:resource>

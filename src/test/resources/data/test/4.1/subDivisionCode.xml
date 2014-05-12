@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Represents a single ddms:subDivisionCode element, for unit testing -->
+<ddms:subDivisionCode xmlns:ddms="urn:us:mil:ces:metadata:ddms:4" ddms:qualifier="ISO-3166" ddms:value="USA"/>
+	
