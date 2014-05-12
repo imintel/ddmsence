@@ -47,7 +47,7 @@ import java.util.Set;
 public class PropertyReader {
 	private Properties _properties = new Properties();
 
-	private static final String PROPERTIES_FILE = "ddmsence.properties";
+	private static final String PROPERTIES_FILE = "conf/ddmsence.properties";
 	private static final String PROPERTIES_PREFIX = "buri.ddmsence.";
 	private static final String UNDEFINED_PROPERTY = "Undefined Property: ";
 
@@ -71,7 +71,7 @@ public class PropertyReader {
 	 * Private to prevent instantiation
 	 */
 	private PropertyReader() {
-		InputStream is = getLoader().getResourceAsStream(PROPERTIES_FILE);
+		InputStream is = PropertyReader.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE);
 		try {
 			if (is != null) {
 				Properties aProperties = new Properties();

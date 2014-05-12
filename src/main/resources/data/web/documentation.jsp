@@ -6,7 +6,7 @@
 </head>
 <body>
 <%@ include file="../shared/header.jspf" %>
-<img src="./images/splashImage.jpg" width="302" height="210" title="DDMSence" align="right" />
+<img src="images/splashImage.jpg" width="302" height="210" title="DDMSence" align="right" />
 <h1>Documentation</h1>
 
 
@@ -60,7 +60,7 @@ to change the version numbers in the classpath examples.</p>
 <!-- DDMScargo(t), DDMScrow, DDMSophagus, DDMSpresso, DDMStrogen, DDMStuary, DDMSquire, DDMSteem, DDMStablishment, DDMStimator, DDMScalator, DDMState -->
 
 <p>
-<img src="./images/essentials-thumb.png" width="300" height="200" title="Essentials Screenshot" align="right" />
+<img src="images/essentials-thumb.png" width="300" height="200" title="Essentials Screenshot" align="right" />
 DDMSence comes with three sample applications. The intention of these applications is to highlight notable aspects of DDMSence, not to create
 real-world solutions.</p>
 
@@ -82,7 +82,7 @@ shows an example of how the Java object model can be built with simple data type
 	<li><a href="tutorials-02.jsp">Tutorial #2: Escort</a></li>
 </ul>
 
-<img src="./images/escape-thumb.png" width="300" height="198" title="Escape Screenshot" align="right" />
+<img src="images/escape-thumb.png" width="300" height="198" title="Escape Screenshot" align="right" />
 
 <h5>Escape</h5>
 
@@ -101,7 +101,7 @@ be possible to plot Temporal Coverage on an
 	
 <a name="javadoc"></a><h4>JavaDoc API Documentation</h4>
 
-<img src="./images/docSample.png" width="305" height="273" title="JavaDoc sample" align="right" />
+<img src="images/docSample.png" width="305" height="273" title="JavaDoc sample" align="right" />
 
 <ul>
 	<li><a href="docs/">Online API Documentation</a></li>

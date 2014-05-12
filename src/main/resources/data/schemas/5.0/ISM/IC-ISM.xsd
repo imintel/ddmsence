@@ -19,8 +19,8 @@
 	xmlns:ismpoctyp="urn:us:gov:ic:cvenum:ism:pocType" xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	targetNamespace="urn:us:gov:ic:ism" elementFormDefault="qualified"
 	attributeFormDefault="qualified" xml:lang="en" ism:resourceElement="true"
-	ism:createDate="2011-12-01" ism:DESVersion="9" ism:classification="U" ism:ownerProducer="USA"
-	version="9">
+	ism:createDate="2011-12-01" ism:DESVersion="10" ism:classification="U" ism:ownerProducer="USA"
+	version="10">
 	<xsd:annotation>
 		<xsd:documentation>
 			<xhtml:h1 ism:ownerProducer="USA" ism:classification="U">Intelligence Community
@@ -29,9 +29,7 @@
 		</xsd:documentation>
 		<xsd:documentation>
 			<xhtml:h2 ism:ownerProducer="USA" ism:classification="U">Notices</xhtml:h2>
-			<xhtml:p ism:ownerProducer="USA" ism:classification="U"> Distribution Notice: 
-           This document has been approved for Public Release and is available for use without restriction.
-       
+			<xhtml:p ism:ownerProducer="USA" ism:classification="U"> distEditionBlockReplace
 			</xhtml:p>
 		</xsd:documentation>
 		<xsd:documentation>
@@ -123,35 +121,35 @@
 	<!--Start Import Statements-->
 	<!--***************************************************-->
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:25x"
-		schemaLocation="./CVEGenerated/CVEnumISM25X.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISM25X.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings"
-		schemaLocation="./CVEGenerated/CVEnumISMAtomicEnergyMarkings.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMAtomicEnergyMarkings.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:classification:all"
-		schemaLocation="./CVEGenerated/CVEnumISMClassificationAll.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMClassificationAll.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:complieswith"
-		schemaLocation="./CVEGenerated/CVEnumISMCompliesWith.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMCompliesWith.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:dissem"
-		schemaLocation="./CVEGenerated/CVEnumISMDissem.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMDissem.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:fgiopen"
-		schemaLocation="./CVEGenerated/CVEnumISMFGIOpen.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMFGIOpen.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:fgiprotected"
-		schemaLocation="./CVEGenerated/CVEnumISMFGIProtected.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMFGIProtected.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:nonic"
-		schemaLocation="./CVEGenerated/CVEnumISMNonIC.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMNonIC.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:nonuscontrols"
-		schemaLocation="./CVEGenerated/CVEnumISMNonUSControls.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMNonUSControls.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:notice"
-		schemaLocation="./CVEGenerated/CVEnumISMNotice.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMNotice.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:ownerproducer"
-		schemaLocation="./CVEGenerated/CVEnumISMOwnerProducer.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMOwnerProducer.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:pocType"
-		schemaLocation="./CVEGenerated/CVEnumISMPocType.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMPocType.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:relto"
-		schemaLocation="./CVEGenerated/CVEnumISMRelTo.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMRelTo.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:sar"
-		schemaLocation="./CVEGenerated/CVEnumISMSAR.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMSAR.xsd"/>
 	<xsd:import namespace="urn:us:gov:ic:cvenum:ism:scicontrols"
-		schemaLocation="./CVEGenerated/CVEnumISMSCIControls.xsd"/>
+		schemaLocation="CVEGenerated/CVEnumISMSCIControls.xsd"/>
 	<!--***************************************************-->
 	<!--End Import Statements-->
 	<!--***************************************************-->
@@ -367,7 +365,7 @@
 		</xsd:simpleType>
 	</xsd:attribute>
 
-	<xsd:attribute name="DESVersion" type="ShortStringType" fixed="9">
+	<xsd:attribute name="DESVersion" type="ShortStringType">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">
 				<xhtml:p ism:ownerProducer="USA" ism:classification="U"> The version number of the
@@ -507,7 +505,7 @@
 		<xsd:attributeGroup ref="ISMNoticeBaseAttributeGroup"/>
 		<xsd:attribute ref="externalNotice" use="optional"/>
 	</xsd:attributeGroup>
-	
+
 	<xsd:attributeGroup name="ISMNoticeExternalAttributeGroup">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -518,8 +516,8 @@
 		<xsd:attributeGroup ref="ISMNoticeBaseAttributeGroup"/>
 		<xsd:attribute ref="externalNotice" use="required" fixed="true"/>
 	</xsd:attributeGroup>
-	
-	
+
+
 	<xsd:attributeGroup name="ISMResourceAttributeGroup">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -631,7 +629,7 @@
 			<xsd:element ref="NoticeText" minOccurs="1" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="NoticeType">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -645,7 +643,7 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="NoticeExternalType">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -659,7 +657,7 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	
+
 	<xsd:element name="Notice" type="NoticeType">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -677,7 +675,7 @@
 			</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	
+
 	<xsd:attributeGroup name="NoticeAttributesGroup">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">
@@ -713,7 +711,7 @@
 		<xsd:attributeGroup ref="ISMNoticeExternalAttributeGroup"/>
 		<xsd:attributeGroup ref="SecurityAttributesGroup"/>
 	</xsd:attributeGroup>
-	
+
 	<xsd:attributeGroup name="NoticeExternalAttributesOptionGroup">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">
@@ -725,8 +723,8 @@
 		<xsd:attributeGroup ref="ISMNoticeExternalAttributeGroup"/>
 		<xsd:attributeGroup ref="SecurityAttributesOptionGroup"/>
 	</xsd:attributeGroup>
-	
-	
+
+
 	<xsd:attribute name="noticeDate">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">
@@ -754,7 +752,7 @@
 	</xsd:complexType>
 
 	<xsd:element name="NoticeExternalList" type="ism:NoticeExternalListType"/>
-	
+
 	<xsd:complexType name="NoticeExternalListType">
 		<xsd:annotation>
 			<xsd:documentation>
@@ -766,8 +764,8 @@
 		</xsd:sequence>
 		<xsd:attributeGroup ref="SecurityAttributesGroup"/>
 	</xsd:complexType>
-	
-	
+
+
 	<xsd:attribute name="noticeReason">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">

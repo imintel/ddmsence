@@ -17,8 +17,8 @@
     <import namespace="http://www.opengis.net/gml/3.3/ce" schemaLocation="../../ogc/gml/3.3/geometryCompact.xsd"/>
     <import namespace="http://www.fgdc.gov/schema/address/addr" schemaLocation="../../fgdc/schema/address/addr.xsd"/>
     <import namespace="http://www.isotc211.org/19112" schemaLocation="../../iso/19112/BP_2012/si.xsd"/>
-    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/core" schemaLocation="./tspi-core.xsd"/>
-    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/ext" schemaLocation="./tspi-ext.xsd"/>
+    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/core" schemaLocation="tspi-core.xsd"/>
+    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/ext" schemaLocation="tspi-ext.xsd"/>
     <!-- == 
 
     Accompanying Specification at: http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0.0/doc

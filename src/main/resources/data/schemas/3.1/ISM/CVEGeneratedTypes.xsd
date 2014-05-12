@@ -110,33 +110,33 @@
 	<!-- **************************************************************** -->
 	<!--         CVE-Generated schema types                         -->
 	<!-- **************************************************************** -->
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISM25X.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISM25X.xsd"/>
 		
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMDissem.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMDissem.xsd"/>
 
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMFGIOpen.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMFGIOpen.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMFGIProtected.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMFGIProtected.xsd"/>
 
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMNonIC.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMNonIC.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMNotice.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMNotice.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMOwnerProducer.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMOwnerProducer.xsd"/>
 
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMRelTo.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMRelTo.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMSCIControls.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMSCIControls.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMClassificationAll.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMClassificationAll.xsd"/>
 	
-	<xsd:include schemaLocation="./CVEGenerated/CVEnumISMCompliesWith.xsd"/>
+	<xsd:include schemaLocation="CVEGenerated/CVEnumISMCompliesWith.xsd"/>
 	
-            <xsd:include schemaLocation="./CVEGenerated/CVEnumISMSAR.xsd"/>
+            <xsd:include schemaLocation="CVEGenerated/CVEnumISMSAR.xsd"/>
             
-            <xsd:include schemaLocation="./CVEGenerated/CVEnumISMNonUSControls.xsd"/>
+            <xsd:include schemaLocation="CVEGenerated/CVEnumISMNonUSControls.xsd"/>
             
-            <xsd:include schemaLocation="./CVEGenerated/CVEnumISMAtomicEnergyMarkings.xsd"/>
+            <xsd:include schemaLocation="CVEGenerated/CVEnumISMAtomicEnergyMarkings.xsd"/>
    
    <!-- **************************************************************
                             CHANGE HISTORY

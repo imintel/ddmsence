@@ -71,7 +71,7 @@
         </xsd:annotation>
     </xsd:import>
     <xsd:import namespace="urn:us:gov:ic:cvenum:virt:network"
-        schemaLocation="./CVEGenerated/CVEnumVIRTNetworkName.xsd"/>
+        schemaLocation="CVEGenerated/CVEnumVIRTNetworkName.xsd"/>
     <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="../w3/1999/xlink/xlink.xsd"/>
     <!--***************************************************-->
     <!--End Import Statements-->

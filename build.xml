@@ -50,19 +50,19 @@
 		<fileset dir="${java.home}/../lib/" includes="tools.jar" />
 	</path>
 	
-	<fileset dir="${conf.dir}" id="files.properties">
+	<fileset dir="src/main/resources/conf" id="files.properties">
 		<include name="*.properties" />
 	</fileset>				
-	<fileset dir="${data.dir}" id="files.requiredData">
+	<fileset dir="src/main/resources/data" id="files.requiredData">
 		<include name="schemas/**" />
 		<include name="schematron/**" />
 	</fileset>	
-	<fileset dir="${data.dir}" id="files.website">
+	<fileset dir="src/main/resources/data" id="files.website">
 		<include name="web/**" />
 		<exclude name="web/images/**" />
 		<exclude name="web/favicon.ico" />
 	</fileset>
-	<fileset dir="${data.dir}" id="files.website.images">
+	<fileset dir="src/main/resources/data" id="files.website.images">
 		<include name="web/images/**" />
 		<include name="web/favicon.ico" />
 	</fileset>
@@ -110,8 +110,8 @@
 				<exclude name="${output.dir}/**"/>				
 		    </fileset>
 		</copy>
-		<copy tofile="${dist.dir}/ddmsence-src-${version}/CHANGES.txt" file="${conf.dir}/CHANGES-template.txt" />
-		<copy tofile="${dist.dir}/ddmsence-src-${version}/LICENSE.txt" file="${conf.dir}/LICENSE-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-src-${version}/CHANGES.txt" file="src/main/resources/conf/CHANGES-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-src-${version}/LICENSE.txt" file="src/main/resources/conf/LICENSE-template.txt" />
 		<zip destfile="${dist.dir}/ddmsence-src-${version}.zip" basedir="${dist.dir}" includes="ddmsence-src-${version}/**" />
 		
 		<!-- Build the bin-flavored download archive -->
@@ -156,8 +156,8 @@
 				<include name="docs/**" />
 			</fileset>
 		</copy>
-		<copy tofile="${dist.dir}/ddmsence-bin-${version}/CHANGES.txt" file="${conf.dir}/CHANGES-template.txt" />
-		<copy tofile="${dist.dir}/ddmsence-bin-${version}/LICENSE.txt" file="${conf.dir}/LICENSE-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-bin-${version}/CHANGES.txt" file="src/main/resources/conf/CHANGES-template.txt" />
+		<copy tofile="${dist.dir}/ddmsence-bin-${version}/LICENSE.txt" file="src/main/resources/conf/LICENSE-template.txt" />
 		<copy todir="${dist.dir}/ddmsence-bin-${version}/lib">
 			<fileset dir="${jars.dir}" />
 		</copy>
@@ -190,13 +190,13 @@
 		</tstamp>
 		<javadoc packagenames="buri.ddmsence.*" sourcepath="${src.main.dir}" destdir="${docs.dir}" classpathref="classpath.compile"
 			noqualifier="java.*"
-			overview="${conf.dir}/javadoc-overview.html"
+			overview="src/main/resources/conf/javadoc-overview.html"
             use="true" splitindex="false"
             windowtitle="DDMSence ${version} API"
             docencoding="UTF-8" charset="UTF-8"
             doctitle="DDMSence ${version}"		
             bottom="Copyright 2010 - 2013 by Brian Uri!&lt;br /&gt;Generated on ${javadoc.time}&lt;br /&gt;&lt;a target='_top' href='http://ddmsence.urizone.net/'&gt;http://ddmsence.urizone.net/&lt;/a&gt;"
-			stylesheetfile="${conf.dir}/javadoc-stylesheet.css"
+			stylesheetfile="src/main/resources/conf/javadoc-stylesheet.css"
 		>
 			<taglet name="buri.ddmsence.util.taglet.DDMSChildInfoTaglet">
 				<path refid="classpath.test" />

@@ -17,7 +17,7 @@ from one of the supported versions of DDMS with your own copies.</p>
 <h3>Information Security Marking (ISM)</h3>
 
 <h4>Restrictions</h4>
-<img src="./images/ismDirectory.png" width="344" height="327" title="ISM Directory Structure" align="right" border="1"/>
+<img src="images/ismDirectory.png" width="344" height="327" title="ISM Directory Structure" align="right" border="1"/>
 <ol>
 <li>These instructions assume that you are updating from a Public Release to a more restricted release, and are NOT changing ISM versions altogether. Please 
 remember that each DDMS version identifies one specific supported version of ISM. For example, in DDMS 4.1, replacing ISM.XML V9 Public Release 

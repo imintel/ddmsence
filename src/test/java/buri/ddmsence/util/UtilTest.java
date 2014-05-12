@@ -1024,9 +1024,9 @@ public class UtilTest extends AbstractBaseTestCase {
 
 	public void testSchematronQueryBinding() throws Exception {
 		Document schDocument = Util.buildXmlDocument(new FileInputStream(
-			"data/sample/schematron/testPublisherValueXslt1.sch"));
+			"src/main/resources/data/sample/schematron/testPublisherValueXslt1.sch"));
 		assertEquals("xslt", Util.getSchematronQueryBinding(schDocument));
-		schDocument = Util.buildXmlDocument(new FileInputStream("data/sample/schematron/testPositionValuesXslt2.sch"));
+		schDocument = Util.buildXmlDocument(new FileInputStream("src/main/resources/data/sample/schematron/testPositionValuesXslt2.sch"));
 		assertEquals("xslt2", Util.getSchematronQueryBinding(schDocument));
 	}
 	

@@ -101,8 +101,8 @@ public class DDMSReaderTest extends AbstractBaseTestCase {
 			getReader(null).getElement(new File("doesnotexist"));
 			fail("Allowed invalid data.");
 		}
-		catch (IOException e) {
-			expectMessage(e, "doesnotexist (The system cannot find the file specified)");
+		catch (Exception e) {
+			expectMessage(e, "doesnotexist");
 		}
 	}
 
@@ -125,7 +125,7 @@ public class DDMSReaderTest extends AbstractBaseTestCase {
 			fail("Allowed invalid data.");
 		}
 		catch (IOException e) {
-			expectMessage(e, "doesnotexist (The system cannot find the file specified)");
+			expectMessage(e, "doesnotexist ");
 		}
 	}
 
@@ -135,13 +135,14 @@ public class DDMSReaderTest extends AbstractBaseTestCase {
 			fail("Allowed invalid data.");
 		}
 		catch (IOException e) {
-			expectMessage(e, "doesnotexist (The system cannot find the file specified)");
+            System.out.println("MESSAGE"+e.getMessage());
+			expectMessage(e, "doesnotexist");
 		}
 	}
 
 	public void testGetElementNotXML() throws IOException {
 		try {
-			getReader(null).getElement(new File("conf/ddmsence.properties"));
+			getReader(null).getElement(new File("src/main/resources/conf/ddmsence.properties"));
 			fail("Allowed invalid data.");
 		}
 		catch (InvalidDDMSException e) {

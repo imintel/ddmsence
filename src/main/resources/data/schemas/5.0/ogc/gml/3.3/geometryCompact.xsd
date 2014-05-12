@@ -2,7 +2,7 @@
     <annotation>
         <documentation>geometryCompact.xsd, part of GML 3.3. Copyright (c) [2011] Open Geospatial Consortium, Inc. To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.</documentation>
     </annotation>
-    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../../../ogc/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../3.2.1/gml.xsd"/>
     <element name="SimplePolygon" type="gmlce:SimplePolygonType" substitutionGroup="gmlce:AbstractSimplePolygon">
         <annotation>
             <documentation>A SimplePolygon is a specialized polygon that has a simplified encoding of the logically equivalent GML 3.2 Surface with a single GML 3.2 PolygonPatch as its surface patch consisting of a single LinearRing as its exterior boundary and does not have any interior boundary. Thus the usage of the term 'simple' here refers to a specialized polygon with a _simplified_ encoding, which is _simply_ connected (no interior rings) and uses a _simple_ closed curve (no self-crossings) to represent its single boundary ring.</documentation>

@@ -111,7 +111,7 @@
 	<!--        IMPORT CVE-Generated schema types                         -->
 	<!-- **************************************************************** -->
 	<xsd:import namespace="urn:us:gov:ic:ism-cvenum" 
-	schemaLocation="./CVEGeneratedTypes.xsd"/>
+	schemaLocation="CVEGeneratedTypes.xsd"/>
 
 	<!-- ************************************************************* -->
 	<!-- ATTRIBUTE GROUP DEFINITIONS ................................. -->

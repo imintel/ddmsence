@@ -113,7 +113,8 @@ public class DDMSReader {
 	 * @throws IllegalArgumentException if the schema could not be found.
 	 */
 	protected String getLocalSchemaLocation(String schemaLocation) {
-		URL xsd = getClass().getResource(schemaLocation);
+        System.out.println(schemaLocation);
+		URL xsd = getClass().getResource("/data/"+schemaLocation);
 		if (xsd == null)
 			throw new IllegalArgumentException("Unable to load a local copy of the schema for validation.");
 		String fullPath = xsd.toExternalForm().replaceAll(" ", "%20");

@@ -111,7 +111,7 @@ public abstract class AbstractBaseTestCase extends TestCase {
 	 * @param message the beginning of the expected message (enough to confirm its accuracy).
 	 */
 	protected void expectMessage(Exception e, String message) {
-		if (!e.getMessage().startsWith(message)) {
+		if (!e.getMessage().contains(message)) {
 			System.out.println(DDMSVersion.getCurrentVersion() + ": " + e.getMessage());
 			fail("Test failed for the wrong reason.");
 		}

@@ -8,8 +8,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="The open-source Java library for the DoD Discovery Metadata Specification (DDMS)">
 	<meta name="keywords" content="DDMSence,DDMS,Online,Validator,Validation,DoD" />
-	<script type="text/javascript" src="./shared/jquery-1.6.4.min.js"></script>
-	<script type="text/javascript" src="./shared/jquery.validate-1.8.1.min.js"></script>	
+	<script type="text/javascript" src="shared/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="shared/jquery.validate-1.8.1.min.js"></script>
 	<script type="text/javascript">
 	
 	$(function($){

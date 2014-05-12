@@ -10,8 +10,8 @@
     <!-- - - - - - -   Local Resource   - - - - - - - - - - -->
     <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../../ogc/gml/3.2.1/gml.xsd"/>
     <import namespace="http://www.isotc211.org/19112" schemaLocation="../../iso/19112/BP_2012/si.xsd"/>
-    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/core" schemaLocation="./tspi-core.xsd"/>
-    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" schemaLocation="./tspi.xsd"/>
+    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0/core" schemaLocation="tspi-core.xsd"/>
+    <import namespace="http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0" schemaLocation="tspi.xsd"/>
     <!-- == 
 
     Accompanying Specification at: http://metadata.ces.mil/mdr/ns/GSIP/tspi/2.0.0/doc
