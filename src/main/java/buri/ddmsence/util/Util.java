@@ -416,7 +416,6 @@ public class Util {
      * @throws InvalidDDMSException if the name is not an NMTOKEN.
      */
     public static void requireValidNMToken(String name) throws InvalidDDMSException {
-        System.out.println("Valid nm token " + name + " " + ((getNonNullString(name)).trim().contains(" ")));
         if (((getNonNullString(name)).trim().contains(" ")) || name == null) {
             throw new InvalidDDMSException("\"" + name + "\" is not a valid NMTOKEN.");
         } else {

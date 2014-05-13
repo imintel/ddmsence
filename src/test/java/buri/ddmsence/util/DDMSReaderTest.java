@@ -135,7 +135,6 @@ public class DDMSReaderTest extends AbstractBaseTestCase {
 			fail("Allowed invalid data.");
 		}
 		catch (IOException e) {
-            System.out.println("MESSAGE"+e.getMessage());
 			expectMessage(e, "doesnotexist");
 		}
 	}

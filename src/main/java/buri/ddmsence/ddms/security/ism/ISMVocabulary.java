@@ -269,20 +269,12 @@ public class ISMVocabulary {
      */
     private static void loadEnumeration(String enumLocation, Builder builder, String enumerationKey)
             throws ParsingException, IOException {
-        System.out.println("LOC ++++++ "+enumLocation+enumerationKey);
         InputStream stream = ISMVocabulary.class.getClassLoader().getResourceAsStream(enumLocation.substring(1) + enumerationKey);
-        System.out.println("Build! "+stream);
         Document doc;
-        try{
-             doc = builder.build(stream);
-        } catch(Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        doc = builder.build(stream);
         Set<String> tokens = new TreeSet<String>();
         Set<String> patterns = new HashSet<String>();
         String cveNamespace = PropertyReader.getProperty(getDDMSVersion().getVersion() + ".ism.cve.xmlNamespace");
-        System.out.println("NS ++++++ "+cveNamespace);
         Element enumerationElement = doc.getRootElement().getFirstChildElement(ENUMERATION_NAME, cveNamespace);
         Elements terms = enumerationElement.getChildElements(TERM_NAME, cveNamespace);
         for (int i = 0; i < terms.size(); i++) {
