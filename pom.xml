@@ -3,15 +3,15 @@
         This POM file is only used to sync the distributable JAR files to the Maven Central Repository.
         For details, see: http://code.google.com/p/ddmsence/issues/detail?id=188 -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.urizone</groupId>
+    <groupId>org.imintel</groupId>
     <artifactId>ddmsence</artifactId>
     <packaging>jar</packaging>
     <name>DDMSence</name>
-    <version>2.1.0</version>
+    <version>2.1.0-MF</version>
     <description>DDMSence (pronounced "dee-dee-em-Essence") is the only open-source Java library that fully supports the
         DoD Discovery Metadata Specification (DDMS).
     </description>
-    <url>http://ddmsence.urizone.net/</url>
+    <url>https://github.com/imintel/ddmsence</url>
     <licenses>
         <license>
             <name>GNU Lesser General Public License (LGPL)</name>
@@ -19,9 +19,17 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    <distributionManagement>
+        <repository>
+            <id>bintray-ckcook-maven-ddmsence</id>
+            <name>ckcook-maven-ddmsence</name>
+            <url>https://api.bintray.com/maven/ckcook/maven/ddmsence</url>
+        </repository>
+    </distributionManagement>
     <scm>
-        <url>http://ddmsence.googlecode.com/svn/trunk/</url>
-        <connection>http://ddmsence.googlecode.com/svn/trunk/</connection>
+        <connection>scm:git:git@github.com:imintel/ddmsence.git</connection>
+        <url>scm:git:git@github.com:imintel/ddmsence.git</url>
+        <developerConnection>scm:git:git@github.com:imintel/ddmsence.git</developerConnection>
     </scm>
     <developers>
         <developer>
@@ -29,7 +37,18 @@
             <name>Brian Uri!</name>
             <email>ddmsence@urizone.net</email>
         </developer>
+        <developer>
+            <id>cam.cook</id>
+            <name>Cameron Cook</name>
+            <email>ckcook@missionfoc.us</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>xom</groupId>
@@ -50,6 +69,32 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0</version>
                 <configuration>
@@ -59,4 +104,33 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>release-sign-artifacts</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.4</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
