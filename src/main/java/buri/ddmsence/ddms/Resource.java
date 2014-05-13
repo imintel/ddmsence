@@ -19,9 +19,7 @@
  */
 package buri.ddmsence.ddms;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -637,6 +635,10 @@ public final class Resource extends AbstractBaseComponent {
 		_orderedList.addAll(getExtensibleElements());
 	}
 
+    public List<ValidationMessage> validateWithSchematron(File schematronFile) throws XSLException, IOException {
+        return validateWithSchematron(new FileInputStream(schematronFile));
+    }
+
 	/**
 	 * Performs a Schematron validation of the DDMS Resource, via the ISO Schematron skeleton stylesheets for XSLT1
 	 * or XSLT2 processors. This action can only be performed on a DDMS Resource which is already valid according
@@ -655,7 +657,7 @@ public final class Resource extends AbstractBaseComponent {
 	 * @throws XSLException if there are XSL problems transforming with stylesheets
 	 * @throws IOException if there are problems reading or parsing the Schematron file
 	 */
-	public List<ValidationMessage> validateWithSchematron(File schematronFile) throws XSLException, IOException {
+	public List<ValidationMessage> validateWithSchematron(InputStream schematronFile) throws XSLException, IOException {
 		List<ValidationMessage> messages = new ArrayList<ValidationMessage>();
 		XSLTransform schematronTransform = Util.buildSchematronTransform(schematronFile);
 		Nodes nodes = schematronTransform.transform(new Document(getXOMElementCopy()));

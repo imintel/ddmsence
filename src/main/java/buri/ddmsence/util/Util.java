@@ -416,10 +416,8 @@ public class Util {
      * @throws InvalidDDMSException if the name is not an NMTOKEN.
      */
     public static void requireValidNMToken(String name) throws InvalidDDMSException {
-        if (((getNonNullString(name)).trim().contains(" ")) || name == null) {
+        if (((getNonNullString(name)).trim().contains(" ")) || name == null || name.isEmpty()) {
             throw new InvalidDDMSException("\"" + name + "\" is not a valid NMTOKEN.");
-        } else {
-
         }
     }
 
@@ -688,6 +686,9 @@ public class Util {
         return (attr == null ? "xslt" : attr.getValue());
     }
 
+    public static XSLTransform buildSchematronTransform(File schematronFile) throws IOException, XSLException {
+        return buildSchematronTransform(new FileInputStream(schematronFile));
+    }
     /**
      * Takes a Schematron file and transforms it with the ISO Schematron skeleton files.
      * <p/>
@@ -705,14 +706,14 @@ public class Util {
      * @throws IOException  if there are file-related problems with preparing the stylesheets
      * @throws XSLException if stylesheet transformation fails
      */
-    public static XSLTransform buildSchematronTransform(File schematronFile) throws IOException, XSLException {
+    public static XSLTransform buildSchematronTransform(InputStream schematronFile) throws IOException, XSLException {
         String oldFactory = System.getProperty(PROP_TRANSFORM_FACTORY);
         String newFactory = PropertyReader.getProperty("xml.transform.TransformerFactory");
         if (Util.isEmpty(oldFactory) || !newFactory.equals(oldFactory)) {
             clearTransformCaches();
             System.setProperty(PROP_TRANSFORM_FACTORY, newFactory);
         }
-        Document schDocument = Util.buildXmlDocument(new FileInputStream(schematronFile));
+        Document schDocument = Util.buildXmlDocument(schematronFile);
         String queryBinding = getSchematronQueryBinding(schDocument);
 
         // long time = new Date().getTime();
@@ -754,7 +755,8 @@ public class Util {
      */
     private synchronized static XSLTransform getSchematronIncludeTransform() throws IOException, XSLException {
         if (_schematronIncludeTransform == null) {
-            InputStream includeStylesheet = getLoader().getResourceAsStream("schematron/iso_dsdl_include.xsl");
+            InputStream includeStylesheet = getLoader().getResourceAsStream("data/schematron/iso_dsdl_include.xsl");
+            System.out.println(includeStylesheet == null);
             _schematronIncludeTransform = new XSLTransform(Util.buildXmlDocument(includeStylesheet));
         }
         return (_schematronIncludeTransform);
@@ -767,7 +769,7 @@ public class Util {
      */
     private synchronized static XSLTransform getSchematronAbstractTransform() throws IOException, XSLException {
         if (_schematronAbstractTransform == null) {
-            InputStream abstractStylesheet = getLoader().getResourceAsStream("schematron/iso_abstract_expand.xsl");
+            InputStream abstractStylesheet = getLoader().getResourceAsStream("data/schematron/iso_abstract_expand.xsl");
             _schematronAbstractTransform = new XSLTransform(Util.buildXmlDocument(abstractStylesheet));
         }
         return (_schematronAbstractTransform);
@@ -784,9 +786,9 @@ public class Util {
             XSLException {
         String resourceName;
         if ("xslt2".equals(queryBinding))
-            resourceName = "schematron/iso_svrl_for_xslt2.xsl";
+            resourceName = "data/schematron/iso_svrl_for_xslt2.xsl";
         else if ("xslt".equals(queryBinding))
-            resourceName = "schematron/iso_svrl_for_xslt1.xsl";
+            resourceName = "data/schematron/iso_svrl_for_xslt1.xsl";
         else
             throw new IllegalArgumentException(
                     "DDMSence currently only supports Schematron files with a queryBinding attribute of \"xslt\" or \"xslt2\".");
